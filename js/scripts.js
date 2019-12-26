@@ -1,0 +1,163 @@
+var w = window,
+d = document,
+e = d.documentElement,
+g = d.getElementsByTagName('body')[0],
+bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+
+var value,
+    activeValue;
+
+$(window).load(function() {
+
+
+
+});
+
+$(window).resize(function() {
+
+
+
+});
+
+$(document).scroll(function() {
+
+
+
+});
+
+$(document).ready(function() {
+
+    // -------------------------
+
+    $(".active_val").on("click", function(e) {
+        e.preventDefault();
+        parentBlock = $(this).closest(".dropdown_select");
+        if(parentBlock.hasClass("active")) {
+            parentBlock.removeClass("active");
+        } else {
+            $(".dropdown_select").removeClass("active");
+            parentBlock.addClass("active");
+        }        
+    });
+
+    $(".vals_list li").on("click", function(e) {
+        e.preventDefault();
+        value = $(this).html();
+        parentBlock = $(this).closest(".dropdown_select");
+        activeValue = parentBlock.find(".active_val");
+        if(parentBlock.hasClass("form_select")) {
+        	value = value.replace(/^\s+/g,'').replace(/\s+$/g,'');
+        	parentBlock.find("input").attr("value", value);
+        } else {
+        	activeValue.html(value);
+        }
+    });
+
+    $(document).mouseup(function (e){
+        hide_element = $(".dropdown_select");
+        if (!hide_element.is(e.target)
+            && hide_element.has(e.target).length === 0) {
+            hide_element.removeClass("active");
+        }
+    });
+
+    $(this).keydown(function(eventObject){
+        if (eventObject.which == 27 ) {
+            $(".dropdown_select").removeClass("active");
+        }
+    });
+
+    // ----------------------
+    
+    $(".count_box button").click(function(e) {
+        e.preventDefault();
+        parentBlock = $(this).closest(".count_box");
+        var countInput = parentBlock.find("input");
+        var countVal = countInput.val();
+        if( $(this).hasClass("minus_btn") && countVal > 1 ) {
+            countVal--;
+        } else if( $(this).hasClass("plus_btn")) {
+            countVal++;
+        }
+        if(countVal == "") {
+            countVal = 1;
+        }
+        countInput.val(countVal);
+        // if(parentBlock.hasClass("goods_count")) {
+        //     countTotalPrice();
+        // }
+    });
+
+    // ----------------
+
+    if( $(".card_slider_big").length > 0 ) {
+        $(".card_slider_big").not(".slick-initialized").slick({
+            dots: false,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 1200,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            asNavFor: ".card_slider_miniatures",
+            fade: true
+        });
+
+        $(".card_slider_miniatures").not(".slick-initialized").slick({
+            dots: false,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 1200,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: ".card_slider_big",
+            focusOnSelect: true,
+            // fade: true,
+            responsive: [
+                {
+                  breakpoint: 900,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2
+                  }
+                },
+                {
+                  breakpoint: 540,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                }
+              ]
+        });
+    }
+
+ 	// ----------------
+
+    if($(".rating").length > 0) {
+        $(".rating").each(function() {
+            var ratingVal = parseFloat($(this).attr("data-rating"));
+            $(".rating").rateYo({ 
+                rating: ratingVal,
+                spacing: "7px", 
+                numStars: 5, 
+                minValue: 0,
+                maxValue: 5, 
+                normalFill: 'transparent',
+                ratedFill: '#353535',
+                starWidth: "33px",
+                readOnly: true,
+                "starSvg": '<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" '
+                +' x="0px" y="0px" viewBox="0 0 55.867 55.867" style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve"> '
+				+'<path d="M55.818,21.578c-0.118-0.362-0.431-0.626-0.808-0.681L36.92,18.268L28.83,1.876c-0.168-0.342-0.516-0.558-0.896-0.558'
+				+'s-0.729,0.216-0.896,0.558l-8.091,16.393l-18.09,2.629c-0.377,0.055-0.689,0.318-0.808,0.681c-0.117,0.361-0.02,0.759,0.253,1.024' 
+				+'l13.091,12.76l-3.091,18.018c-0.064,0.375,0.09,0.754,0.397,0.978c0.309,0.226,0.718,0.255,1.053,0.076l16.182-8.506l16.18,8.506'
+				+'c0.146,0.077,0.307,0.115,0.466,0.115c0.207,0,0.413-0.064,0.588-0.191c0.308-0.224,0.462-0.603,0.397-0.978l-3.09-18.017'
+				+'l13.091-12.761C55.838,22.336,55.936,21.939,55.818,21.578z"/></svg>'
+            });
+        });
+
+    }
+
+});
