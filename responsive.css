@@ -1,30 +1,431 @@
-@media only screen and (max-width: 1240px) {
+@media only screen and (max-width: 1800px) {
 
+	/*-- Section 2 - Maine Page --*/
+
+	.goods_cards_templ {
+		display: flex;
+		display: -webkit-flex;
+	}
+
+	.goods_cards_templ .left_col {
+		width: 270px;
+		padding: 15px 10px 0 0;
+	}
+
+	.goods_cards_templ .right_col {
+		width: calc(100% - 270px);
+		padding-left: 10px;
+	}
+
+	.good_thumbnails {
+	    margin: 0 -15px;
+	}
+
+	.good_thumb {
+	    width: calc(33.33% - 30px);
+	    margin: 15px;
+	}
+
+	.catalog_sect .side_nav {
+	    top: 15px;
+	}
+
+	.catalog_sect .side_nav {
+		padding: 10px 0 10px 10px;
+		position: relative;
+	    top: 0;
+	}
+
+	/*-- /Section 2 - Maine Page --*/
+
+}
+
+@media only screen and (max-width: 1400px) {
+
+	/*-- Header --*/
+
+	.main_nav_wrapp {
+	    margin: 5px -15px;
+	}
+
+	.main_nav li {
+	    padding: 5px 15px;
+	}
+
+	.icons_thumbs {
+	    margin: 11px -8px 0 0;
+	}
+
+	.icons_thumbs > div {
+	    padding: 5px 8px;
+	}
+
+	.logo {
+	    margin: 5px 0;
+	}
+
+	/*-- /Header --*/
 
 
 }
 
+@media only screen and (max-width: 1240px) {
+
+
+
+	/*-- Header --*/
+
+/*	.main_nav_wrapp {
+	    margin: 5px -15px;
+	}
+
+	.main_nav li {
+	    padding: 5px 15px;
+	}
+
+	.icons_thumbs {
+	    margin: 11px -8px 0 0;
+	}
+
+	.icons_thumbs > div {
+	    padding: 5px 8px;
+	}
+
+	.logo {
+	    margin: 5px 0;
+	}*/
+
+	.main_header {
+	    padding: 0 20px;
+	}
+
+	.main_nav_wrapp {
+	    margin-top: 15px;
+	}
+
+	.main_nav li a {
+	    padding: 3px 0;
+	    font-size: 22px;
+	    line-height: 22px;
+	}
+
+	/*-- /Header --*/
+
+}
+
+@media only screen and (max-width: 1124px) {
+
+	/*-- Section 2 - Maine Page --*/
+	.good_thumb {
+	    width: calc(50% - 30px);
+	    margin: 15px;
+	}
+	/*-- /Section 2 - Maine Page --*/
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+/*-- Header --*/
+
+.main_header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 12;
+	background: #ffffff;
+}
+
+.respmenubtn {
+	display: block;
+	top: 10px;
+}
+
+.main_nav_wrapp {
+	width: 100%;
+    margin: 5px 0;
+}
+
+.close_btn {
+    display: block;
+}
+
+.resp_nav {
+	/*display: block;*/
+	display: none;
+	width: 100%;
+	height: 100vh;
+	overflow-y: auto;
+	margin: 0;
+	padding: 60px 20px 80px 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 13;
+	background: #ffffff;
+}
+
+.main_nav li {
+	display: block;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.main_nav li a {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.header_site .left_col {
+    width: 60px;
+}
+
+.header_site .right_col {
+    width: calc(100% - 300px);
+}
+
+/*-- /Header --*/
+
+/*-- Section 1 - Maine Page --*/
+
+.promo_templ .left_col {
+    width: 40%;
+}
+
+.promo_templ .right_col {
+    width: 60%;
+}
+
+.promo_title {
+    top: -19px;
+}
+
+/*-- /Section 1 - Maine Page --*/
+
+/*-- Section 2 - Maine Page --*/
+
+.goods_cards_templ {
+	display: block;
+}
+
+.goods_cards_templ .left_col {
+    width: 100%;
+    padding: 15px 0;
+}
+
+.goods_cards_templ .right_col {
+    width: 100%;
+    padding-left: 0;
+}
+
+.side_nav {
+    width: 100%;
+    max-width: 100%;
+    min-height: auto;
+}
+
+.side_nav li a {
+    margin: 10px 0;
+}
+
+.good_thumb h3 {
+    font-size: 24px;
+    line-height: 26px;
+}
+
+.good_thumb p {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+/*-- /Section 2 - Maine Page --*/
+
+}
 
 @media only screen and (max-width: 900px) {
 
+/*-- Header --*/
 
+	.footer {
+		display: block;
+		padding: 10px 0;
+	}
+
+	.footer .left_col {
+		width: 100%;
+		padding: 10px 0;
+	}
+
+	.footer .right_col {
+		width: 100%;
+		padding: 10px 0;
+		justify-content: center;
+	    -webkit-justify-content: center;
+	}
+
+	.footer_nav {
+		justify-content: center;
+	    -webkit-justify-content: center;
+	    margin: 0;
+	}
+
+	.footer_nav li {
+	    padding: 7px 15px;
+	}
+
+/*-- /Header --*/
 
 }
 
 @media only screen and (max-width: 767px) {
 
+	.wrapper {
+		padding-top: 88px;
+	}
 
+	h2 {
+	    font-size: 30px;
+	    line-height: 37px;
+	}
+
+	/*-- Header --*/
+
+	.resp_icons_wrapp {
+		padding: 10px 0 20px;
+	}
+
+	.resp_append {
+		display: inline-block;
+		vertical-align: top;
+		margin: 10px;
+	}
+
+	.select_lang_wrapp .dropdown_select.active .dropdown_box {
+	    left: -30px;
+	}
+
+	/*-- /Header --*/
+
+	/*-- Section 1 - Maine Page --*/
+
+	.promo_templ {
+		display: block;
+		height: 480px;
+		min-height: auto;
+		overflow: hidden;
+	}
+
+	.promo_templ .left_col {
+		width: 100%;
+	}
+
+	.promo_templ .right_col {
+	    width: 100%;
+	    position: absolute;
+	    top: 50%;
+	    left: 0;
+	    transform: translate(0, -50%);
+	}
+
+	.promo_title {
+	    height: 100%;
+	    width: 100%;
+	    padding: 10px 0;
+	    /*display: flex;*/
+	    /*align-items: center;*/
+	    border: none;
+	    border-radius: 0;
+	    transform: none;
+	    /*margin: 2em auto;*/
+	    position: relative;
+	    top: 0;
+	    /*text-align: center;*/
+	    justify-content: center;
+	    background: rgba(255, 255, 255, .6);
+	}
+
+	.title_h {
+	    transform: none;
+	    text-align: center;
+	}
+
+	.planet {
+		display: none;
+	}
+
+	.promo_title h1:after {
+		display: none;
+	}
+
+	/*-- /Section 1 - Maine Page --*/
 
 }
 
 @media only screen and (max-width: 600px) {
 
+	.wrapper {
+		padding-top: 62px;
+	}
 
+	/*-- Header --*/
+
+	.main_header {
+	    padding: 0;
+	}
+
+	.header_site .left_col {
+	    padding: 5px 5px 5px 0;
+	}
+
+	.header_site .center_col {
+	    width: 150px;
+	    padding: 5px;
+	}
+
+	.header_site .right_col {
+	    width: calc(100% - 210px);
+	    padding: 5px 10px 5px 5px;
+	}
+
+	.respmenubtn {
+	    top: 2px;
+	}
+
+	.icons_thumbs {
+	    margin: 0;
+	}
+
+	/*-- /Header --*/
+
+	/*-- Section 2 - Maine Page --*/
+
+	.good_thumbnails {
+	    margin: 0;
+	}
+
+	.good_thumb {
+	    width: 100%;
+	    margin: 15px 0;
+	}
+
+	/*-- /Section 2 - Maine Page --*/
 
 }
 
-
 @media only screen and (max-width: 480px) {
 
-	
+	/*-- Header --*/
+
+	.header_site .center_col {
+	    width: 130px;
+	    padding-top: 7px;
+	}
+
+	.header_site .right_col {
+	    width: calc(100% - 190px);
+	}
+
+	/*-- /Header --*/
+
 }
