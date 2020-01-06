@@ -305,8 +305,7 @@ textarea:focus {
 }
 
 .row_2 {
-    /*max-width: 1290px;*/
-    max-width: 1240px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
