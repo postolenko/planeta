@@ -525,9 +525,9 @@ header {
 }
 
 .logo {
-    display: inline-block;
-    vertical-align: top;
-    margin: 12px 0;
+    display: block;
+    max-width: 225px;
+    margin: 12px auto;
 }
 
 .logo img {
