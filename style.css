@@ -1046,7 +1046,8 @@ h2 {
 .catalog_sect .side_nav {
     position: absolute;
     top: 30px;
-    left: 0;
+    /*left: 0;*/
+    left: -25px;
     z-index: 2;
 }
 

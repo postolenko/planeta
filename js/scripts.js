@@ -9,7 +9,7 @@ function getRespNavParams() {
     } else {
         $(".resp_append").prependTo("#respIcons");
     }
-    if(bodyWidth <= 1699) {
+    if(bodyWidth <= 1869) {
         $(".side_nav_wrapp").appendTo("#sideNavAppend");
     } else {        
         $(".side_nav_wrapp").prependTo(".catalog_wrapp");
