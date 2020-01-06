@@ -9,12 +9,24 @@ function getRespNavParams() {
     } else {
         $(".resp_append").prependTo("#respIcons");
     }
-    if(bodyWidth <= 1700) {
+    if(bodyWidth <= 1699) {
         $(".side_nav_wrapp").appendTo("#sideNavAppend");
     } else {        
         $(".side_nav_wrapp").prependTo(".catalog_wrapp");
     }
 
+}
+
+function getPromoImgParams() {
+    if(bodyWidth > 767) {
+        $("#promoImg").css({
+            "padding-top" : $(".main_header").height() + "px"
+        });
+    } else {
+        $("#promoImg").css({
+            "padding-top" : 0
+        });
+    }
 }
 
 var w = window,
@@ -36,6 +48,7 @@ $(window).resize(function() {
 
     bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
     getRespNavParams();
+    getPromoImgParams();
 
 });
 
@@ -48,6 +61,7 @@ $(document).scroll(function() {
 $(document).ready(function() {
 
     getRespNavParams();
+    getPromoImgParams();
 
     // -------------------------
 

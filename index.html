@@ -19,96 +19,98 @@
 	<!-- Header -->
 		
 	<header class="main_header">
-		<div class="header_site">
-			<div class="left_col" id="nav_col">
-				<div class="main_nav_wrapp">
-					<ul class="main_nav">
-						<li><a href="#">Главная</a></li>
-						<li><a href="#">Магазин</a></li>
-						<li><a href="#">О нас</a></li>
-					</ul>
+		<div class="row">
+			<div class="header_site">
+				<div class="left_col" id="nav_col">
+					<div class="main_nav_wrapp">
+						<ul class="main_nav">
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Магазин</a></li>
+							<li><a href="#">О нас</a></li>
+						</ul>
+					</div>
+					<button class="respmenubtn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
 				</div>
-				<button class="respmenubtn">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
-			</div>
-			<div class="center_col">
-				<a href="#" class="logo">
-					<img src="img/logo.png" alt="" />
-				</a>
-			</div>
-			<div class="right_col">
-				<div class="icons_thumbs" id="respIcons">
-					<div class="resp_append">
-						<div class="search_wrapp">
-							<a href="#"><i class="search"></i></a>
+				<div class="center_col">
+					<a href="#" class="logo">
+						<img src="img/logo.png" alt="" />
+					</a>
+				</div>
+				<div class="right_col">
+					<div class="icons_thumbs" id="respIcons">
+						<div class="resp_append">
+							<div class="search_wrapp">
+								<a href="#"><i class="search"></i></a>
+							</div>
 						</div>
-					</div>
-					<div class="resp_append">
-						<div class="user_wrapp">
-							<a href="#"><i class="user"></i></a>
+						<div class="resp_append">
+							<div class="user_wrapp">
+								<a href="#"><i class="user"></i></a>
+							</div>
 						</div>
-					</div>
-					<div class="resp_append">
-						<div class="like_wrapp">
-							<a href="#"><i class="heart"></i></a>
-							<div class="count_circle">1</div>
+						<div class="resp_append">
+							<div class="like_wrapp">
+								<a href="#"><i class="heart"></i></a>
+								<div class="count_circle">1</div>
+							</div>
 						</div>
-					</div>
-					<div class="resp_append">
-						<div class="basket_wrapp">
-							<a href="#"><i class="cart"></i></a>
-							<div class="count_circle">99</div>
+						<div class="resp_append">
+							<div class="basket_wrapp">
+								<a href="#"><i class="cart"></i></a>
+								<div class="count_circle">99</div>
+							</div>
 						</div>
-					</div>
-					<div>
-						<div class="select_lang_wrapp">
-							<div class="dropdown_select">
-								<div class="active_val">
-									<div class="lang_templ">
-										<div class="col_1">
-											<img class="flag" src="img/rus.svg" alt="RUS" />
-										</div>
-										<div class="col_2">
-											<div class="lang">Rus</div>
+						<div>
+							<div class="select_lang_wrapp">
+								<div class="dropdown_select">
+									<div class="active_val">
+										<div class="lang_templ">
+											<div class="col_1">
+												<img class="flag" src="img/rus.svg" alt="RUS" />
+											</div>
+											<div class="col_2">
+												<div class="lang">Rus</div>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="dropdown_box">
-									<ul class="vals_list">
-										<li>
-											<div class="lang_templ">
-												<div class="col_1">
-													<img class="flag" src="img/rus.svg" alt="RUS" />
+									<div class="dropdown_box">
+										<ul class="vals_list">
+											<li>
+												<div class="lang_templ">
+													<div class="col_1">
+														<img class="flag" src="img/rus.svg" alt="RUS" />
+													</div>
+													<div class="col_2">
+														<div class="lang">Rus</div>
+													</div>
 												</div>
-												<div class="col_2">
-													<div class="lang">Rus</div>
+											</li>
+											<li>
+												<div class="lang_templ">
+													<div class="col_1">
+														<img class="flag" src="img/ukraine.svg" alt="ENG" />
+													</div>
+													<div class="col_2">
+														<div class="lang">UA</div>
+													</div>
 												</div>
-											</div>
-										</li>
-										<li>
-											<div class="lang_templ">
-												<div class="col_1">
-													<img class="flag" src="img/ukraine.svg" alt="ENG" />
+											</li>
+											<li>
+												<div class="lang_templ">
+													<div class="col_1">
+														<img class="flag" src="img/eng.svg" alt="ENG" />
+													</div>
+													<div class="col_2">
+														<div class="lang">En</div>
+													</div>
 												</div>
-												<div class="col_2">
-													<div class="lang">UA</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="lang_templ">
-												<div class="col_1">
-													<img class="flag" src="img/eng.svg" alt="ENG" />
-												</div>
-												<div class="col_2">
-													<div class="lang">En</div>
-												</div>
-											</div>
-										</li>
-									</ul>
+											</li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -133,13 +135,13 @@
 		<section class="promo_sect">
 			<div class="row">
 				<div class="promo_templ">
-					<div class="left_col">
+					<div class="left_col" id="promoImg">
 						<img class="promo_img" src="img/promo_img.png" alt="" />
 					</div>
 					<div class="right_col">
 						<div class="promo_title">
-							<div class="planet"></div>
-							<h1 class="title_h">Мужская коллекция</h1>
+							<img class="title_image" src="img/planet.svg" alt="" />
+							<h1>Мужская коллекция</h1>
 						</div>
 					</div>
 				</div>
@@ -149,7 +151,8 @@
 		<!-- /Section 1 - Maine Page -->
 
 		<div class="content_inner_box">
-
+			<div class="main_row">
+			<img class="planeta_img" src="img/planeta_bg.svg" alt="Planeta">
 			<!-- Section 2 - Maine Page -->
 			<section class="catalog_sect">
 				<h2>Штаны КАРГО</h2>
@@ -162,7 +165,7 @@
 							<li><a href="#">комбенизоны</a></li>
 						</ul>
 					</div>
-					<div class="row">
+					<div class="row_2">
 						<div class="goods_cards_templ">
 							<div class="left_col" id="sideNavAppend"></div>
 							<div class="right_col">
@@ -199,7 +202,7 @@
 									</a>
 									<a href="#" class="good_thumb">
 										<div class="img_box">
-											<img src="img/good_04.png" alt="" />
+											<img src="img/good_01.png" alt="" />
 										</div>
 										<div class="descript">
 											<i class="heart"></i>
@@ -209,17 +212,17 @@
 									</a>
 									<a href="#" class="good_thumb">
 										<div class="img_box">
-											<img src="img/good_05.png" alt="" />
+											<img src="img/good_02.png" alt="" />
 										</div>
 										<div class="descript">
-											<i class="heart"></i>
+											<i class="heart_dark"></i>
 											<h3>Штаны карго</h3>
 											<p>780 ₴</p>
 										</div>
 									</a>
 									<a href="#" class="good_thumb">
 										<div class="img_box">
-											<img src="img/good_06.jpg" alt="" />
+											<img src="img/good_03.png" alt="" />
 										</div>
 										<div class="descript">
 											<i class="heart"></i>
@@ -264,7 +267,7 @@
 				</div>
 			</section>
 			<!-- /Section 2 - Maine Page -->
-
+			</div>
 		</div>
 
 		</div>
@@ -273,7 +276,7 @@
 	<!-- Footer -->
 
 		<footer class="footer_section">
-			<div class="row">
+			<div class="main_row">
 				<div class="footer">
 					<div class="left_col">
 						<ul class="footer_nav">

@@ -16,6 +16,7 @@
     font-style: normal;
 }
 
+
 /*-------------------------------------------*/
 /* BASIC SETUP */
 /*-------------------------------------------*/
@@ -291,10 +292,21 @@ textarea:focus {
 /* ----- REUSABLE COMPONENTS ------ */
 /*-------------------------------------------*/
 
-.row {
-    max-width: 1250px;
+.main_row {
+    max-width: 1950px;
     margin: 0 auto;
     padding: 0 25px;
+}
+
+.row {
+    max-width: 1750px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.row_2 {
+    max-width: 1290px;
+    margin: 0 auto;
 }
 
 .overflow_wrapp {
@@ -481,7 +493,6 @@ textarea:focus {
 /*-------------------------------------------*/
 
 header {
-    /*background-color: #ffffff;*/
     background-color: transparent;
 }
 
@@ -590,7 +601,6 @@ header {
 .main_nav li a:hover:after {
     opacity: 1;
 }
-
 
 /* ----- Responsive Menu Button ------ */
 
@@ -750,7 +760,6 @@ header {
     right: -11px;
 }
 
-
 /*-- Dropdown Select --*/
 
 .dropdown_select {
@@ -879,7 +888,6 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 0 50px;
 }
 
 /*-------------------------------------------*/
@@ -900,39 +908,24 @@ header {
     z-index: 2;
 }
 
-.content:before {
+.planeta_img {
     content: "";
-    width: 100%;
-    height: 370px;
-    background-image: url(img/planeta_bg.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    width: 102%;
+    margin: 0 -1%;
+    height: auto;
     position: absolute;
-    top: 24px;
-    left: -25px;
-    opacity: .07;
-}
-
-.content:after {
-    content: "";
-    width: 100%;
-    height: 370px;
-    background-image: url(img/planeta_bg.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    bottom: 30px;
-    right: -25px;
-    opacity: .07;
+    top: 50%;
+    left: 0;
+    opacity: .15;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    transform: translate(0, -50%);
 }
 
 /*-- Section 1 - Maine Page --*/
 
 .promo_sect {
     background: #f4f4f4;
-    /*min-height: 100vh;*/
     padding: 1px 0;
     z-index: 2;
 }
@@ -951,10 +944,16 @@ header {
 
 .promo_templ .left_col {
     width: 50%;
+    padding: 100px 10px 10px 0;
 }
 
 .promo_templ .right_col {
     width: 50%;
+    padding: 10px 5% 10px 10px;
+    display: flex;
+    direction: -webkit-flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
 }
 
 .promo_img {
@@ -965,7 +964,9 @@ header {
 }
 
 .promo_title {
-
+    height: 20em;
+    width: 20em;
+    position: relative;
 }
 
 .promo_title h1 {
@@ -977,6 +978,14 @@ header {
     color: #2c2c2c;
     position: relative;
     letter-spacing: 2px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
 }
 
 .promo_title h1:after {
@@ -989,65 +998,18 @@ header {
     left: 20px;
 }
 
-.promo_title {
-    height: 20em;
-    width: 20em;
-    display: flex;
-    align-items: center;
-    border: 1px solid silver;
-    border-radius: 50%;
-    transform: skew(-10deg, -15deg);
-    margin: 2em auto;
-    position: relative;
-    top: -84px;
-}
-
-.title_h {
-    text-transform: uppercase;
-    text-align: center;
-    transform: skew(10deg, 15deg);
-
-}
-
-.title_h::before {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
-
-.planet {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  animation: spin 5s linear infinite;
-}
-
-.planet::before {
-  content: "";
-  position: absolute;
-  left: 14.645%;
-  top: 14.645%;
-  margin: -1em 0 0 -1em;
-  width: 2em;
-  height: 2em;
-  background: #6c6c6c;
-  box-shadow: 0 0 10px 1px #6c6c6c;
-  border-radius: 50%;
-  text-align: center;
-  animation: fix-circle 5s linear backwards infinite; 
-}
-
-@keyframes spin {
-  from { transform: rotate(0)     }
-  to   { transform: rotate(1turn) }
-}
-
-@keyframes fix-circle {
-  from { transform: rotate(1turn) skew(10deg, 15deg) }
-  to   { transform: rotate(0)     skew(10deg, 15deg) }
+.title_image {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 /*-- /Section 1 - Maine Page --*/
@@ -1086,10 +1048,6 @@ h2 {
     top: 30px;
     left: 0;
     z-index: 2;
-}
-
-.side_nav li {
-
 }
 
 .side_nav li a {
@@ -1250,7 +1208,6 @@ h2 {
 
 .good_thumb .descript {
     padding: 13px 50px 10px 5px;
-    /*padding-right: 50px;*/
     position: relative;
 }
 
@@ -1286,15 +1243,6 @@ h2 {
 
 /*-- /Section 2 - Maine Page --*/
 
-
-
-
-
-
-
-
-
-
 /*-- Section 1 - Card Page --*/
 
 .card_templ {
@@ -1317,29 +1265,11 @@ h2 {
     margin: 15px 0;
 }
 
-.card_slider_big {
-
-}
-
-.card_slider_big .slide {
-
-}
-
 .card_slider_big .slide .img_box {
     height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.card_slider_miniatures {
-/*    display: flex;
-    display: -webkit-flex;
-    flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    justify-content: space-between;*/
-    /*width: 100%;*/
-    /*margin: 0 -10px;*/
 }
 
 .card_slider_miniatures .slide {
@@ -1399,10 +1329,6 @@ h2 {
 
 .card_title div:last-child:after {
     display: none;
-}
-
-.card_title {
-
 }
 
 .card_title h2 {
@@ -1892,21 +1818,9 @@ h2 {
      border-right: 1px solid #c0c0c0;
 }
 
-/*.sizes_table .table_row .cell:nth-child(1):after {
-    display: block;
-    content: "";
-    width: 1px;
-    height: 100%;
-    background-color: #c0c0c0;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-*/
 .sizes_table .table_row.table_header .cell:nth-child(1)  {
     border-right: none;
 }
-
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */

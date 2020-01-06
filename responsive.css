@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1700px) {
+@media only screen and (max-width: 1699px) {
 
 	/*-- Section 2 - Maine Page --*/
 
@@ -95,9 +95,9 @@
 	    margin: 5px 0;
 	}*/
 
-	.main_header {
+/*	.main_header {
 	    padding: 0 20px;
-	}
+	}*/
 
 	.main_nav_wrapp {
 	    margin-top: 15px;
@@ -125,6 +125,10 @@
 }
 
 @media only screen and (max-width: 1024px) {
+
+	.row {
+		padding: 0 15px;
+	}
 
 /*-- Header --*/
 
@@ -178,7 +182,7 @@
 }
 
 .header_site .left_col {
-    width: 60px;
+    width: 50px;
 }
 
 .header_site .right_col {
@@ -309,6 +313,10 @@
 
 	/*-- Section 1 - Maine Page --*/
 
+	.planeta_img {
+		display: none;
+	}
+
 	.promo_templ {
 		display: block;
 		height: 480px;
@@ -322,27 +330,26 @@
 
 	.promo_templ .right_col {
 	    width: 100%;
+	    background: rgba(255, 255, 255, .6);
+	    padding: 10px 0;
 	    position: absolute;
 	    top: 50%;
 	    left: 0;
+	    -webkit-transform: translate(0, -50%);
+	    -moz-transform: translate(0, -50%);
 	    transform: translate(0, -50%);
 	}
 
 	.promo_title {
 	    height: 100%;
 	    width: 100%;
-	    padding: 10px 0;
-	    /*display: flex;*/
-	    /*align-items: center;*/
+	    padding: 0;
 	    border: none;
 	    border-radius: 0;
 	    transform: none;
-	    /*margin: 2em auto;*/
 	    position: relative;
 	    top: 0;
-	    /*text-align: center;*/
 	    justify-content: center;
-	    background: rgba(255, 255, 255, .6);
 	}
 
 	.title_h {
@@ -354,7 +361,18 @@
 		display: none;
 	}
 
+	.promo_title h1 {
+		transform: none;
+		position: relative;
+		display: block;
+		text-align: center;
+	}
+
 	.promo_title h1:after {
+		display: none;
+	}
+
+	.title_image {
 		display: none;
 	}
 
@@ -385,7 +403,7 @@
 
 	.header_site .right_col {
 	    width: calc(100% - 210px);
-	    padding: 5px 10px 5px 5px;
+	    padding: 5px 0 5px 5px;
 	}
 
 	.respmenubtn {
@@ -417,13 +435,17 @@
 
 	/*-- Header --*/
 
+	.logo {
+	    margin-top: 8px;
+	}
+
 	.header_site .center_col {
-	    width: 130px;
+	    width: 110px;
 	    padding-top: 7px;
 	}
 
 	.header_site .right_col {
-	    width: calc(100% - 190px);
+	    width: calc(100% - 160px);
 	}
 
 	/*-- /Header --*/
