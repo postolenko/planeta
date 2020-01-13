@@ -10,20 +10,19 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 	<title>Denis Postolenko</title>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 
 <body>
 
-	<div class="wrapper">
+	<div class="wrapper">	
 
 	<!-- Header -->
 		
-	<header>
+	<header class="main_header fixed">
 		<div class="row">
-			<div class="header_site">			
-				<div class="left_col">
-					<div class="main_nav_wrapp" id="resp_nav">
+			<div class="header_site">
+				<div class="left_col" id="nav_col">
+					<div class="main_nav_wrapp">
 						<ul class="main_nav">
 							<li><a href="#">Главная</a></li>
 							<li><a href="#">Магазин</a></li>
@@ -38,28 +37,28 @@
 				</div>
 				<div class="center_col">
 					<a href="#" class="logo">
-						<img src="img/logo.png" alt="" />
+						<img src="img/planet_logo.svg" alt="" />
 					</a>
 				</div>
 				<div class="right_col">
-					<div class="icons_thumbs">
-						<div>
+					<div class="icons_thumbs" id="respIcons">
+						<div class="resp_append">
 							<div class="search_wrapp">
 								<a href="#"><i class="search"></i></a>
 							</div>
 						</div>
-						<div>
+						<div class="resp_append">
 							<div class="user_wrapp">
 								<a href="#"><i class="user"></i></a>
 							</div>
 						</div>
-						<div>
+						<div class="resp_append">
 							<div class="like_wrapp">
 								<a href="#"><i class="heart"></i></a>
 								<div class="count_circle">1</div>
 							</div>
 						</div>
-						<div>
+						<div class="resp_append">
 							<div class="basket_wrapp">
 								<a href="#"><i class="cart"></i></a>
 								<div class="count_circle">99</div>
@@ -121,6 +120,11 @@
 		</div>
 	</header>
 
+	<div class="resp_nav" id="resp_nav">
+		<button type="button" class="close_btn"></button>
+		<div class="resp_icons_wrapp"></div>
+	</div>
+
 	<!-- /Header -->
 
 	<!-- Content -->
@@ -130,7 +134,9 @@
 
 		<!-- Section 1 - Card Page -->
 
-		<section>			
+		<section class="profile_sect">
+			<img class="planeta_img_6 opacity_2" src="img/planeta_bg.svg" alt="Planeta">
+			<img class="planeta_img_7 opacity_2" src="img/planeta_bg.svg" alt="Planeta">
 			<div class="row">
 				<div class="card_templ">
 					<div class="left_col">
@@ -241,106 +247,108 @@
 								</div>
 							</div>
 						</div>
-						<div class="btns_wrapp">							
-							<div>
-								<a href="#" class="white_pill">Добавить в корзину</a>
+						<div class="left_offset">
+							<div class="btns_wrapp">							
+								<div>
+									<a href="#" class="white_pill">Добавить в корзину</a>
+								</div>
+								<div>
+									<a href="#" class="dark_pill">Купить сейчас</a>
+								</div>
 							</div>
-							<div>
-								<a href="#" class="dark_pill">Купить сейчас</a>
-							</div>
-						</div>
-						<div class="sizes">
-							<div class="sizes_table">
-								<div class="table_row table_header">
-									<div class="cell">
-										
+							<div class="sizes">
+								<div class="sizes_table">
+									<div class="table_row table_header">
+										<div class="cell">
+											
+										</div>
+										<div class="cell">
+											<p>XS</p>
+										</div>
+										<div class="cell">
+											<p>S</p>
+										</div>
+										<div class="cell">
+											<p>M</p>
+										</div>
+										<div class="cell">
+											<p>L</p>
+										</div>
+										<div class="cell">
+											<p>XL</p>
+										</div>
+										<div class="cell">
+											<p>XXL</p>
+										</div>
 									</div>
-									<div class="cell">
-										<p>XS</p>
+									<div class="table_row">
+										<div class="cell">
+											<p>Объем талии</p>
+										</div>
+										<div class="cell">
+											<p>56</p>
+										</div>
+										<div class="cell">
+											<p>61</p>
+										</div>
+										<div class="cell">
+											<p>66</p>
+										</div>
+										<div class="cell">
+											<p>71</p>
+										</div>
+										<div class="cell">
+											<p>76</p>
+										</div>
+										<div class="cell">
+											<p>81</p>
+										</div>
 									</div>
-									<div class="cell">
-										<p>S</p>
+									<div class="table_row">
+										<div class="cell">
+											<p>Объем бедер</p>
+										</div>
+										<div class="cell">
+											<p>30</p>
+										</div>
+										<div class="cell">
+											<p>33</p>
+										</div>
+										<div class="cell">
+											<p>36</p>
+										</div>
+										<div class="cell">
+											<p>38</p>
+										</div>
+										<div class="cell">
+											<p>41</p>
+										</div>
+										<div class="cell">
+											<p>43</p>
+										</div>
 									</div>
-									<div class="cell">
-										<p>M</p>
-									</div>
-									<div class="cell">
-										<p>L</p>
-									</div>
-									<div class="cell">
-										<p>XL</p>
-									</div>
-									<div class="cell">
-										<p>XXL</p>
-									</div>
-								</div>
-								<div class="table_row">
-									<div class="cell">
-										<p>Объем талии</p>
-									</div>
-									<div class="cell">
-										<p>56</p>
-									</div>
-									<div class="cell">
-										<p>61</p>
-									</div>
-									<div class="cell">
-										<p>66</p>
-									</div>
-									<div class="cell">
-										<p>71</p>
-									</div>
-									<div class="cell">
-										<p>76</p>
-									</div>
-									<div class="cell">
-										<p>81</p>
-									</div>
-								</div>
-								<div class="table_row">
-									<div class="cell">
-										<p>Объем бедер</p>
-									</div>
-									<div class="cell">
-										<p>30</p>
-									</div>
-									<div class="cell">
-										<p>33</p>
-									</div>
-									<div class="cell">
-										<p>36</p>
-									</div>
-									<div class="cell">
-										<p>38</p>
-									</div>
-									<div class="cell">
-										<p>41</p>
-									</div>
-									<div class="cell">
-										<p>43</p>
-									</div>
-								</div>
-								<div class="table_row">
-									<div class="cell">
-										<p>Длина штанины</p>
-									</div>
-									<div class="cell">
-										<p>24</p>
-									</div>
-									<div class="cell">
-										<p>25</p>
-									</div>
-									<div class="cell">
-										<p>26</p>
-									</div>
-									<div class="cell">
-										<p>27</p>
-									</div>
-									<div class="cell">
-										<p>28</p>
-									</div>
-									<div class="cell">
-										<p>29</p>
+									<div class="table_row">
+										<div class="cell">
+											<p>Длина штанины</p>
+										</div>
+										<div class="cell">
+											<p>24</p>
+										</div>
+										<div class="cell">
+											<p>25</p>
+										</div>
+										<div class="cell">
+											<p>26</p>
+										</div>
+										<div class="cell">
+											<p>27</p>
+										</div>
+										<div class="cell">
+											<p>28</p>
+										</div>
+										<div class="cell">
+											<p>29</p>
+										</div>
 									</div>
 								</div>
 							</div>

@@ -1,1 +1,13 @@
 # http://postolenko.github.io/planeta/index.html
+# http://postolenko.github.io/planeta/basket.html
+# http://postolenko.github.io/planeta/basket_form.html
+# http://postolenko.github.io/planeta/card.html
+# http://postolenko.github.io/planeta/checkout.html
+# http://postolenko.github.io/planeta/enter.html
+# http://postolenko.github.io/planeta/orders.html
+# http://postolenko.github.io/planeta/planet.html
+# http://postolenko.github.io/planeta/profile.html
+# http://postolenko.github.io/planeta/registration.html
+# http://postolenko.github.io/planeta/search.html
+# http://postolenko.github.io/planeta/settings.html
+# http://postolenko.github.io/planeta/wishlist.html

@@ -27,6 +27,32 @@ function getPromoImgParams() {
             "padding-top" : 0
         });
     }
+    if(bodyWidth > 767) {
+        $("#setHeight").css({
+            "padding-top" : $(".main_header").height() + "px"
+        });
+    } else {
+        $("#setHeight").css({
+            "padding-top" : 0
+        });
+    }
+}
+
+function countTotalPrice() {
+    if( $(".goods_prices").length > 0 ) {
+        priceGood = 0;
+        priceValTotal = 0;
+        $(".goods_prices [data-price-val]").each(function() {
+            priceVal = parseInt( $(this).attr("data-price-val") );
+            goodsCount = $(this).closest(".good_price_item").find(".goods_count input").val();
+            if(goodsCount == "") {
+                goodsCount = 0;
+            }
+            priceGood = priceVal * goodsCount;
+            priceValTotal += priceGood;
+        });
+        $("#total_price").html(priceValTotal);
+    }
 }
 
 var w = window,
@@ -62,6 +88,7 @@ $(document).ready(function() {
 
     getRespNavParams();
     getPromoImgParams();
+    countTotalPrice();
 
     // -------------------------
 
@@ -81,7 +108,7 @@ $(document).ready(function() {
         value = $(this).html();
         parentBlock = $(this).closest(".dropdown_select");
         activeValue = parentBlock.find(".active_val");
-        if(parentBlock.hasClass("form_select")) {
+        if(activeValue.find("input").length > 0) {
         	value = value.replace(/^\s+/g,'').replace(/\s+$/g,'');
         	parentBlock.find("input").attr("value", value);
         } else {
@@ -221,6 +248,38 @@ $(document).ready(function() {
                 $("#resp_nav").fadeOut(300);
                 $(".respmenubtn").removeClass("active");
         }
+    });
+
+    // ---------------
+
+    $(".count_box_2 button").click(function(e) {
+        e.preventDefault();
+        parentBlock = $(this).closest(".count_box_2");
+        var countInput = parentBlock.find("input");
+        var countVal = countInput.val();
+        if( $(this).hasClass("minus_btn_2") && countVal > 0 ) {
+            countVal--;
+        } else if( $(this).hasClass("plus_btn_2")) {
+            countVal++;
+        }
+        if(countVal == "") {
+            countVal = 0;
+        }
+        countInput.val(countVal);
+        if(parentBlock.hasClass("goods_count")) {
+            countTotalPrice();
+        }
+    });
+
+    $(".goods_count input").on("keyup", function(e) {
+        e.preventDefault();
+        countTotalPrice();
+    });
+
+    $(".good_price_item .del_btn").on("click", function(e) {
+        e.preventDefault();
+        $(this).closest(".good_price_item").remove();
+        countTotalPrice();
     });
 
 });

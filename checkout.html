@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
+	<title>Denis Postolenko</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+	<img class="planeta_img_6" src="img/planeta_bg.svg" alt="Planeta">
+
+	<!-- Header -->
+		
+	<header class="main_header fixed transparent_bg">
+		<div class="row">
+			<div class="header_site">
+				<div class="left_col" id="nav_col">
+					<div class="main_nav_wrapp">
+						<ul class="main_nav">
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Магазин</a></li>
+							<li><a href="#">О нас</a></li>
+						</ul>
+					</div>
+					<button class="respmenubtn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+				<div class="center_col">
+					<a href="#" class="logo">
+						<img src="img/planet_logo.svg" alt="" />
+					</a>
+				</div>
+				<div class="right_col">
+					<div class="icons_thumbs" id="respIcons">
+						<div class="resp_append">
+							<div class="search_wrapp">
+								<a href="#"><i class="search"></i></a>
+							</div>
+						</div>
+						<div class="resp_append">
+							<div class="user_wrapp">
+								<a href="#"><i class="user"></i></a>
+							</div>
+						</div>
+						<div class="resp_append">
+							<div class="like_wrapp">
+								<a href="#"><i class="heart"></i></a>
+								<div class="count_circle">1</div>
+							</div>
+						</div>
+						<div class="resp_append">
+							<div class="basket_wrapp">
+								<a href="#"><i class="cart"></i></a>
+								<div class="count_circle">99</div>
+							</div>
+						</div>
+						<div>
+							<div class="select_lang_wrapp">
+								<div class="dropdown_select">
+									<div class="active_val">
+										<div class="lang_templ">
+											<div class="col_1">
+												<img class="flag" src="img/rus.svg" alt="RUS" />
+											</div>
+											<div class="col_2">
+												<div class="lang">Rus</div>
+											</div>
+										</div>
+									</div>
+									<div class="dropdown_box">
+										<ul class="vals_list">
+											<li>
+												<div class="lang_templ">
+													<div class="col_1">
+														<img class="flag" src="img/rus.svg" alt="RUS" />
+													</div>
+													<div class="col_2">
+														<div class="lang">Rus</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="lang_templ">
+													<div class="col_1">
+														<img class="flag" src="img/ukraine.svg" alt="ENG" />
+													</div>
+													<div class="col_2">
+														<div class="lang">UA</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="lang_templ">
+													<div class="col_1">
+														<img class="flag" src="img/eng.svg" alt="ENG" />
+													</div>
+													<div class="col_2">
+														<div class="lang">En</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="resp_nav" id="resp_nav">
+		<button type="button" class="close_btn"></button>
+		<div class="resp_icons_wrapp"></div>
+	</div>
+
+	<!-- /Header -->
+
+	<!-- Content -->
+		<div class="content">		
+
+		<!-- Section 1 - Chekout Page -->
+
+		<section class="profile_sect">			
+			<img class="planeta_img_7" src="img/planeta_bg.svg" alt="Planeta">
+			<div class="row">
+				<div class="checkout_templ">
+					<h3>Оформление заказа</h3>
+					<div class="checkout_wrapp shape">
+						<form>
+							<div class="checkout_table">
+								<div class="cell">
+									<h3>КОНТАКТАЯ ИНФОРМАЦИЯ</h3>
+									<div class="input_wrapp_white">
+										<input type="text" placeholder="Имя" />
+									</div>
+									<div class="input_wrapp_white">
+										<input type="text" placeholder="Фамилия" />
+									</div>
+									<div class="input_wrapp_white">
+										<input type="tel" placeholder="+380 000000000" />
+									</div>
+									<div class="input_wrapp_white">
+										<input type="email" placeholder="E-mail" />
+									</div>
+								</div>
+								<div class="cell">
+									<h3>ДОСТАВКА</h3>
+									<div class="dropdown_select white_select">
+										<div class="active_val">
+											<input type="text" value="Страна получателя" readonly="">
+										</div>
+										<div class="dropdown_box">
+											<ul class="vals_list">
+												<li>Значение 1</li>
+												<li>Значение 2</li>
+												<li>Значение 3</li>
+											</ul>
+										</div>
+									</div>
+									<div class="dropdown_select white_select">
+										<div class="active_val">
+											<input type="text" value="Способ доставки" readonly="">
+										</div>
+										<div class="dropdown_box">
+											<ul class="vals_list">
+												<li>Значение 1</li>
+												<li>Значение 2</li>
+												<li>Значение 3</li>
+											</ul>
+										</div>
+									</div>
+									<div class="dropdown_select white_select">
+										<div class="active_val">
+											<input type="text" value="Город" readonly="">
+										</div>
+										<div class="dropdown_box">
+											<ul class="vals_list">
+												<li>Значение 1</li>
+												<li>Значение 2</li>
+												<li>Значение 3</li>
+											</ul>
+										</div>
+									</div>
+									<div class="dropdown_select white_select">
+										<div class="active_val">
+											<input type="text" value="Адрес, № отделения" readonly="">
+										</div>
+										<div class="dropdown_box">
+											<ul class="vals_list">
+												<li>Значение 1</li>
+												<li>Значение 2</li>
+												<li>Значение 3</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="cell">
+									<h3>ОПЛАТА</h3>
+									<div class="radios">
+										<div class="radio_wrapp">
+											<label class="radio" for="radio_1"><input type="radio" name="radios" id="radio_1">При получении</label>
+										</div>
+										<div class="radio_wrapp">
+											<label class="radio" for="radio_2"><input type="radio" name="radios" id="radio_2">При получении</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="checkout_wrapp">
+						<form>
+							<div class="checkout_table">
+								<div class="cell">
+									<h3>Наименование</h3>
+									<div class="text_wrapp">
+										<p>Штаны карго</p>
+									</div>
+								</div>
+								<div class="cell">
+									<h3>Количество</h3>
+									<div class="text_wrapp">
+										<p>5 шт.</p>
+									</div>
+								</div>
+								<div class="cell">
+									<h3>Комментарий</h3>
+									<div class="input_wrapp_4">
+										<textarea placeholder="Оставьте свой комментарий"></textarea>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="basket_footer_wrapp">
+						<div class="basket_footer no_border">
+							<div class="price_wrapp"><p>итого:</p><p id="total_price">10 000</p><p>₴</p></div>
+						</div>
+						<div class="basket_btn_wrapp">
+							<input type="submit" class="dark_btn" value="оформить заказ" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- /Section 1 - Chekout Page -->
+
+		</div>
+	<!-- /Content -->
+
+	<!-- Footer -->
+
+		<footer class="footer_section">
+			<div class="main_row">
+				<div class="footer">
+					<div class="left_col">
+						<ul class="footer_nav">
+							<li><a href="#"><i class="copy"></i>2019 PLANETA</a></li>
+							<li><a href="#">FAQs</a></li>
+							<li><a href="#">СВЯЗАТЬСЯ С НАМИ</a></li>
+						</ul>
+					</div>
+					<div class="right_col">
+						<ul class="soc_links">
+							<li><a href="#"><img src="img/facebook.svg" alt="" /></a></li>
+							<li><a href="#"><img src="img/instagram.svg" alt="" /></a></li>
+							<li><a href="#"><img src="img/telegram.svg" alt="" /></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	<!-- /Footer -->
+
+	</div>
+
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/rateyo.css">
+	<script src="vendors/js/jquery.js"></script>
+	<script src="slick/slick.js"></script>
+	<script type="text/javascript" src="vendors/js/rateyo.js"></script>
+	<script src="js/scripts.js"></script>
+
+</body>
+</html>
