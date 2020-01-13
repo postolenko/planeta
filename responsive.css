@@ -38,6 +38,53 @@
 
 	/*-- /Section 2 - Maine Page --*/
 
+	/*-- Section 1 - Basket Page --*/
+
+	.basket_table_header p {
+	    font-size: 28px;
+	    line-height: 32px;
+	}
+
+	.good_table h3 {
+	    font-size: 28px;
+	    line-height: 32px;
+	}
+
+	.basket_item {
+	    margin: 30px 0;
+	    padding: 0;
+	}
+
+	.basket_item p {
+	    font-size: 28px;
+	    line-height: 32px;
+	}
+
+	.count_box_2 input {
+	    font-size: 28px;
+	    line-height: 32px;
+	}
+
+	.basket_item .del_btn {
+		top: 6px;
+	    right: 0;
+	}
+
+	.good_table_cell_1 {
+	    width: 155px;
+	}
+
+	.good_table_cell_2 {
+	    width: calc(100% - 155px);
+	}
+
+	.good_table_cell_1 .img_box {
+	    height: 220px;
+	    max-width: 155px;
+	}
+
+	/*-- /Section 1 - Basket Page --*/
+
 }
 
 @media only screen and (max-width: 1400px) {
@@ -352,23 +399,25 @@
 	    justify-content: center;
 	}
 
-	.title_h {
-	    transform: none;
-	    text-align: center;
+	.h1_wrapp {
+	    top: 0;
+		transform: none;
+		text-align: center;
 	}
 
-	.planet {
+	.orbit {
 		display: none;
 	}
 
-	.promo_title h1 {
+	.h1_wrapp h1 {
 		transform: none;
 		position: relative;
 		display: block;
 		text-align: center;
+		box-shadow: none;
 	}
 
-	.promo_title h1:after {
+	.h1_wrapp h1:after {
 		display: none;
 	}
 
