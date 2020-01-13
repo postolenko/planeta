@@ -3132,6 +3132,11 @@ button.minus_btn_2 {
     padding: 20px 24px;
 }
 
+.p_resp {
+    display: none;
+    padding-bottom: 20px;
+}
+
 /*-- /Section 1 - Basket Page --*/
 
 /*-- Section 1 - Vishlist Page --*/
