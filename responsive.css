@@ -85,9 +85,25 @@
 
 	/*-- /Section 1 - Basket Page --*/
 
+	/*-- Section 1 - Search Page --*/
+
+	.good_thumbnails_2 .good_thumb_2 {
+		width: calc(25% - 30px);
+	}
+
+	/*-- /Section 1 - Search Page --*/
+
 }
 
 @media only screen and (max-width: 1699px) {
+
+	/*-- Header --*/
+
+	.sub_menu {
+	    min-width: 900px;
+	}
+
+	/*-- Header --*/
 
 	/*-- Section 1 - Orders Page --*/
 
@@ -126,6 +142,45 @@
 	}
 
 	/*-- /Section 1 - Orders Page --*/
+
+	/*-- Section 1 - Profile Page --*/
+
+	.profile_templ .side_bg {
+	    display: none;
+	}
+
+	.profile_wrapp {
+		width: 100%;
+	    max-width: 900px;
+	}
+
+	.profile_wrapp h2 {
+	    padding: 20px 0;
+	}
+
+	.profile_desc {
+	    padding: 20px 0;
+	}
+
+	.profile_navs_wrapp {
+	    padding: 20px 0;
+	}
+
+	.profile_nav li {
+	    padding: 10px 0;
+	}
+
+	.profile_desc p {
+	    font-size: 25px;
+	    line-height: 34px;
+	}
+
+	.profile_nav li a {
+	    font-size: 25px;
+	    line-height: 34px;
+	}
+
+	/*-- /Section 1 - Profile Page --*/
 
 }
 
@@ -281,6 +336,39 @@
 
 	/*-- /Section 1 - Chekout Page --*/
 
+	/*-- Section 1 - Settings Page --*/
+
+	.settings_form_wrapp:nth-child(1) {
+	    margin-top: 30px;
+	}
+
+	.input_wrapp_templ {
+		display: block;
+	    margin: 15px 0;
+	}
+
+	.input_wrapp_templ .col_1 {
+	    width: 100%;
+	    padding-bottom: 10px;
+	    padding-right: 0;
+	    text-align: left;
+	}
+
+	.input_wrapp_templ .col_2 {
+	    width: 100%;
+	    padding-left: 0;
+	}
+
+	.settings_form .left_col {
+	    width: calc(100% - 380px);
+	}
+
+	.settings_form .right_col {
+	    width: 380px;
+	}
+
+	/*-- /Section 1 - Settings Page --*/
+
 
 }
 
@@ -311,6 +399,14 @@
 	}
 
 	/*-- Section 1 - Card Page --*/
+
+	/*-- Section 1 - Search Page --*/
+
+	.good_thumbnails_2 .good_thumb_2 {
+		width: calc(33.33% - 30px);
+	}
+
+	/*-- /Section 1 - Search Page --*/
 
 }
 
@@ -678,6 +774,14 @@
 
 	/*-- /Section 1 - Orders Page --*/
 
+	/*-- Section 1 - Search Page --*/
+
+	.good_thumbnails_2 .good_thumb_2 {
+		width: calc(50% - 30px);
+	}
+
+	/*-- /Section 1 - Search Page --*/
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -902,7 +1006,6 @@
 	    line-height: 25px;
 	}
 
-
 	/*-- /Section 1 - Enter Page --*/
 
 	/*-- Section 1 - Orders Page --*/
@@ -953,6 +1056,78 @@
 	}
 
 	/*-- /Section 1 - Orders Page --*/
+
+	/*-- Section 1 - Profile Page --*/
+
+	.profile_templ {
+	    min-height: auto;
+	}
+
+	/*-- /Section 1 - Profile Page --*/
+
+	/*-- Section 1 - Registration Page --*/
+
+	.enter_form_wrapp {
+	    margin: 25px auto;
+	}
+
+	.enter_form_wrapp h3 {
+	    font-size: 33px;
+	    line-height: 40px;
+	}
+
+	.planeta_img_4,
+	.planeta_img_5 {
+		display: none;
+	}
+
+	.input_wrapp_2 {
+	    height: 60px;
+	    margin: 20px 0;
+	    padding-top: 15px;
+	}
+
+	.input_wrapp_2 input {
+	    font-size: 28px;
+	}
+
+	/*-- /Section 1 - Registration Page --*/
+
+	/*-- Section 1 - Search Page --*/
+
+	.search_result_templ {
+	    margin: 0;
+	}
+
+	/*-- /Section 1 - Search Page --*/
+
+	/*-- Section 1 - Settings Page --*/
+
+	.settings_form {
+		display: block;
+	    margin-bottom: 30px;
+	}
+
+	.input_wrapp_templ label {
+	    font-size: 23px;
+	    line-height: 30px;
+	}
+
+	.settings_form .left_col {
+	    width: 100%;
+	    padding: 10px 0 20px 0;
+	}
+
+	.settings_form .right_col {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.submit_wrapp {
+	    padding: 15px 0;
+	}
+
+	/*-- /Section 1 - Settings Page --*/
 
 }
 
@@ -1074,6 +1249,67 @@
 
 	/*-- /Section 1 - Card Page --*/
 
+	/*-- Section 1 - Profile Page --*/
+
+	.profile_navs_wrapp {
+		display: block;
+	}
+
+	.profile_wrapp h2 {
+	    padding: 10px 0;
+	}
+
+	.profile_desc p {
+	    font-size: 22px;
+	    line-height: 32px;
+	}
+
+	.profile_nav {
+	    width: 100%;
+	    padding: 0 !important;
+	}
+
+	.profile_nav:after {
+		display: none;
+	}
+
+	.profile_nav li {
+		display: block;
+		padding: 5px 0;
+		text-align: center;
+	}
+
+	.profile_nav li a {
+	    font-size: 20px;
+	    line-height: 24px;
+	}
+
+	/*-- /Section 1 - Profile Page --*/
+
+	/*-- Section 1 - Search Page --*/
+
+	.good_thumbnails_2 .good_thumb_2 {
+		width: calc(50% - 30px);
+		margin: 10px 15px;
+	}
+
+	/*-- /Section 1 - Search Page --*/
+
+	/*-- Section 1 - Settings Page --*/
+
+	.input_wrapp_templ label {
+	    font-size: 22px;
+	    line-height: 28px;
+	}
+
+	.dark_btn_2 {
+		min-width: 100%;
+	    font-size: 19px;
+	    line-height: 23px;
+	}
+
+	/*-- /Section 1 - Settings Page --*/
+
 }
 
 @media only screen and (max-width: 560px) {
@@ -1129,6 +1365,19 @@
 	}
 
 	/*-- /Section 1 - Basket Page --*/
+
+	/*-- Section 1 - Search Page --*/
+
+	.search_wrapp_2 {
+	    width: 290px;
+	}
+
+	.good_thumbnails_2 .good_thumb_2 {
+		width: 100%;
+		margin: 10px 0;
+	}
+
+	/*-- /Section 1 - Search Page --*/
 
 }
 
