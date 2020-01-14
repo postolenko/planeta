@@ -55,6 +55,16 @@ function countTotalPrice() {
     }
 }
 
+function getSizeBtnPosition() {
+    if( $("#sizeBtn").length> 0 ) {
+        parentBlock = $(".sizes_wrapp");
+        $("#sizeBtn").offset({top: parentBlock.offset().top});
+        $("#sizeBtn").css({
+            "height" : parentBlock.height() + "px"
+        });
+    }
+}
+
 var w = window,
 d = document,
 e = d.documentElement,
@@ -66,7 +76,7 @@ var value,
 
 $(window).load(function() {
 
-
+    getSizeBtnPosition();
 
 });
 
@@ -75,6 +85,7 @@ $(window).resize(function() {
     bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
     getRespNavParams();
     getPromoImgParams();
+    getSizeBtnPosition();
 
 });
 
@@ -146,9 +157,6 @@ $(document).ready(function() {
             countVal = 1;
         }
         countInput.val(countVal);
-        // if(parentBlock.hasClass("goods_count")) {
-        //     countTotalPrice();
-        // }
     });
 
     // ----------------
@@ -176,7 +184,6 @@ $(document).ready(function() {
             slidesToScroll: 1,
             asNavFor: ".card_slider_big",
             focusOnSelect: true,
-            // fade: true,
             responsive: [
                 {
                   breakpoint: 900,
@@ -186,9 +193,9 @@ $(document).ready(function() {
                   }
                 },
                 {
-                  breakpoint: 540,
+                  breakpoint: 560,
                   settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1
                   }
                 }
@@ -280,6 +287,13 @@ $(document).ready(function() {
         e.preventDefault();
         $(this).closest(".good_price_item").remove();
         countTotalPrice();
+    });
+
+    // ------------------
+
+    $("#sizeBtn").on("click", function(e) {
+        e.preventDefault();
+        $(".sizes_wrapp").toggleClass("hide");
     });
 
 });

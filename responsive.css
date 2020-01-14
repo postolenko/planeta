@@ -87,6 +87,48 @@
 
 }
 
+@media only screen and (max-width: 1699px) {
+
+	/*-- Section 1 - Orders Page --*/
+
+	.order_item {
+	    margin: 30px 0;
+	    padding-left: 0;
+	}
+
+	.orders_table_header p {
+	    font-size: 19px;
+	    line-height: 26px;
+	}
+
+	.back_link {
+	    font-size: 23px;
+	    line-height: 30px;
+	}
+
+	.back_link:before {
+	    width: 20px;
+	    height: 25px;
+	}
+
+	.status_text p {
+	    font-size: 21px;
+	    line-height: 26px;
+	}
+
+	.order_item p {
+	    font-size: 21px;
+	    line-height: 26px;
+	}
+
+	.order_item .cell {
+	    padding: 5px 10px 0 10px;
+	}
+
+	/*-- /Section 1 - Orders Page --*/
+
+}
+
 @media only screen and (max-width: 1400px) {
 
 	/*-- Header --*/
@@ -113,38 +155,138 @@
 
 	/*-- /Header --*/
 
+	/*-- Section 1 - Card Page --*/
+
+	.card_templ .left_col {
+	    width: 50%;
+	    padding: 10px 15px 10px 0;
+	}
+
+	.card_templ .right_col {
+	    width: 50%;
+	    padding: 10px 0 10px 15px;
+	}
+
+	.card_slider_big {
+	    margin-bottom: 10px;
+	}
+
+	.card_slider_big .slide .img_box {
+	    height: 430px;
+	}
+
+	.card_slider_miniatures .slide .img_box {
+	    height: 200px;
+	}
+
+	.card_title h2 {
+	    font-size: 33px;
+	    line-height: 50px;
+	}
+
+	.card_title p {
+	    font-size: 33px;
+	    line-height: 50px;
+	}
+
+	.list_1 {
+	    margin: 20px 0;
+	}
+
+	.list_1 li {
+	    font-size: 22px;
+	}
+
+	.card_text p {
+	    font-size: 22px;
+	    line-height: 25px;
+	}
+
+	.filters_wrapp {
+	    margin: 25px 0;
+	}
+
+	.filter {
+	    width: 50%;
+	    padding-bottom: 10px;
+	}
+
+	.left_offset {
+	    padding-left: 0;
+	}
+
+	.btns_wrapp .white_pill {
+	    min-width: 260px;
+	}
+
+	.btns_wrapp .dark_pill {
+	    min-width: 260px;
+	}
+
+	.sizes_wrapp {
+	    margin: 30px 0;
+	}
+
+	.sizes {
+	    padding: 5px 40px 20px 20px;
+	}
+
+	.sizes_table .table_row .cell:nth-child(1) p {
+	    font-size: 17px;
+	    line-height: 19px;
+	}
+
+	.sizes_table p {
+	    font-size: 17px;
+	    line-height: 19px;
+	}
+
+	/*-- /Section 1 - Card Page --*/
+
+	/*-- Section 1 - Chekout Page --*/
+
+	.checkout_table .cell {
+		padding: 15px 25px;
+	}
+
+	.checkout_table h3 {
+	    font-size: 24px;
+	    line-height: 30px;
+	}
+
+	.checkout_table p {
+	    padding: 10px 0;
+	    font-size: 24px;
+	    line-height: 30px;
+	}
+
+	.radio {
+	    font-size: 24px;
+	    line-height: 30px;
+	}
+
+	.radio input {
+	    top: 4px;
+	}
+
+	.white_select .active_val input {
+	    font-size: 25px;
+	    line-height: 30px;
+	}
+
+	.input_wrapp_white input {
+	    font-size: 25px;
+	    line-height: 30px;
+	}
+
+	/*-- /Section 1 - Chekout Page --*/
+
 
 }
 
 @media only screen and (max-width: 1240px) {
 
-
-
 	/*-- Header --*/
-
-/*	.main_nav_wrapp {
-	    margin: 5px -15px;
-	}
-
-	.main_nav li {
-	    padding: 5px 15px;
-	}
-
-	.icons_thumbs {
-	    margin: 11px -8px 0 0;
-	}
-
-	.icons_thumbs > div {
-	    padding: 5px 8px;
-	}
-
-	.logo {
-	    margin: 5px 0;
-	}*/
-
-/*	.main_header {
-	    padding: 0 20px;
-	}*/
 
 	.main_nav_wrapp {
 	    margin-top: 15px;
@@ -158,16 +300,104 @@
 
 	/*-- /Header --*/
 
+	/*-- Section 1 - Card Page --*/
+
+	.card_templ .left_col {
+	    width: 45%;
+	}
+
+	.card_templ .right_col {
+	    width: 55%;
+	}
+
+	/*-- Section 1 - Card Page --*/
+
+}
+
+@media only screen and (max-width: 1160px) {
+
+/*-- Section 1 - Orders Page --*/
+
+	.orders_table_header {
+		display: none;
+	}
+
+	.back_link_resp {
+		display: inline-block;
+		vertical-align: top;
+		margin: 20px 0 10px 45px;
+	}
+
+	.order_item {
+		padding-bottom: 25px;
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		border-bottom: 1px solid #ededed;
+	}
+
+	.order_item .cell:nth-child(1) {
+	    width: 50%;
+	}
+
+	.order_item .cell:nth-child(2) {
+	    width: 30%;
+	}
+
+	.order_item .cell:nth-child(3) {
+	    width: 20%;
+	}
+
+	.order_item .cell:nth-child(4) {
+		width: 100px;
+		margin-left: 166px;
+		margin-top: -110px;
+	}
+
+	.order_item .cell:nth-child(5) {
+	    width: calc(100% - 516px);
+	    margin-top: -110px;
+	}
+
+	.order_item .cell:nth-child(6) {
+	    width: 250px;
+	    margin-top: -110px;
+	}
+
+	.order_item .p_resp {
+		display: block;
+	}
+
+/*-- /Section 1 - Orders Page --*/
+
 }
 
 @media only screen and (max-width: 1124px) {
 
 	/*-- Section 2 - Maine Page --*/
+
 	.good_thumb {
 	    width: calc(50% - 30px);
 	    margin: 15px;
 	}
+
 	/*-- /Section 2 - Maine Page --*/
+
+	/*-- Section 1 - Chekout Page --*/
+
+	.checkout_table {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.checkout_table .cell {
+		width: 100%;
+	}
+
+	.checkout_table .cell:after {
+		display: none;
+	}
+
+	/*-- /Section 1 - Chekout Page --*/
 
 }
 
@@ -395,6 +625,59 @@
 
 /*-- /Header --*/
 
+	/*-- Section 1 - Card Page --*/
+
+	.card_templ {
+		display: block;
+	    margin: 10px 0;
+	}
+
+	.card_templ .left_col {
+	    width: 100%;
+	    padding: 10px 0;
+	    max-width: 750px;
+	    margin: 0 auto;
+	}
+
+	.card_templ .right_col {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.filters_wrapp {
+	    margin: 15px 0;
+	}
+
+	.filter {
+	    width: 33.33%;
+	}
+
+	.sizes {
+	    padding: 5px 10px 20px 10px;
+	}
+
+	.sizes_btn {
+		display: none;
+	}
+
+	.sizes_wrapp:after {
+	    display: none;
+	}
+
+	.sizes_wrapp.hide .sizes {
+	    left: 0;
+	}
+
+	/*-- /Section 1 - Card Page --*/
+
+	/*-- Section 1 - Orders Page --*/
+
+	.profile_sect {
+	    margin: 29px 0;
+	}
+
+	/*-- /Section 1 - Orders Page --*/
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -406,6 +689,14 @@
 	h2 {
 	    font-size: 30px;
 	    line-height: 37px;
+	}
+
+	.planeta_img_2 {
+		display: none;
+	}
+
+	.planeta_img_3 {
+		display: none;
 	}
 
 	/*-- Header --*/
@@ -502,6 +793,10 @@
 		display: none;
 	}
 
+	.basket_item .cell {
+		padding: 0 3px;
+	}
+
 	.basket_item .cell:nth-child(1) {
 	    width: 70%;
 	}
@@ -522,7 +817,154 @@
 		margin-left: 150px;
 	}
 
+	.dark_btn {
+	    min-width: 250px;
+	    padding: 10px 15px;
+	    font-size: 26px;
+	    line-height: 36px;
+	}
+
+	.basket_btn_wrapp .dark_btn {
+	    min-width: 250px;
+	    padding: 10px 15px;
+	}
+
 	/*-- /Section 1 - Basket Page --*/
+
+	/*-- Section 1 - Card Page --*/
+
+	.card_slider_big .slide .img_box {
+	    height: 300px;
+	}
+
+	/*-- /Section 1 - Card Page --*/
+
+	/*-- Section 1 - Chekout Page --*/
+
+	.checkout_table .cell {
+	    padding: 10px 15px;
+	}
+
+	.shape:before {
+		display: none;
+	}
+
+	.white_select .active_val input {
+	    font-size: 18px;
+	}
+
+	.input_wrapp_white input {
+	    font-size: 18px;
+	}
+
+	.basket_btn_wrapp {
+	    padding: 5px 0;
+	}
+
+	.basket_footer p {
+	    font-size: 23px;
+	    line-height: 26px;
+	}
+
+	.input_wrapp_white {
+	    margin: 20px 0;
+	}
+
+	.white_select {
+	    margin: 20px 0;
+	}
+
+	/*-- /Section 1 - Chekout Page --*/
+
+	/*-- Section 1 - Enter Page --*/
+
+	.enter_form_wrapp .input_wrapp:nth-child(1) {
+	    margin-top: 30px;
+	}
+
+	.input_wrapp {
+	    margin: 30px 0;
+	    padding-top: 20px;
+	    height: 65px;
+	}
+
+	.grey_btn {
+	    min-width: 270px;
+	    padding: 15px 15px;
+	}
+
+	.submit_wrapp {
+	    padding: 30px 0;
+	}
+
+	.checkbox {
+	    font-size: 19px;
+	    line-height: 25px;
+	}
+
+
+	/*-- /Section 1 - Enter Page --*/
+
+	/*-- Section 1 - Orders Page --*/
+
+	.order_item .cell:nth-child(1) {
+	    width: 100%;
+	}
+
+	.order_item .cell:nth-child(2) {
+	    width: 33%;
+	    padding-bottom: 10px;
+	    text-align: left;
+	}
+
+	.order_item .cell:nth-child(3) {
+	    width: 33%;
+	    padding-bottom: 10px;
+	    margin: 0;
+	    text-align: left;
+	}
+
+	.order_item .cell:nth-child(4) {
+		width: 33%;
+		padding-bottom: 10px;
+		margin: 0;
+		text-align: left;
+	}
+
+	.order_item .cell:nth-child(5) {
+	    width: 50%;
+	    margin: 0;
+	    text-align: left;
+	}
+
+	.order_item .cell:nth-child(6) {
+	    width: 50%;
+	    margin: 0;
+	    text-align: left;
+	}
+
+	.order_item .p_resp {
+		padding-bottom: 10px;
+	}
+
+	.order_item .good_table_cell_1 .img_box {
+	    height: 180px;
+	    margin-bottom: 20px;
+	}
+
+	/*-- /Section 1 - Orders Page --*/
+
+}
+
+@media only screen and (max-width: 680px) {
+
+	/*-- Section 1 - Card Page --*/
+
+	.filter {
+	    width: 50%;
+	}
+
+	/*-- /Section 1 - Card Page --*/
 
 }
 
@@ -600,6 +1042,38 @@
 
 	/*-- /Section 1 - Basket Page --*/
 
+
+	/*-- Section 1 - Card Page --*/
+
+	.filter {
+	    width: 100%;
+	    padding: 5px 0;
+	}
+
+	.sizes_table .table_row:nth-child(1) .cell {
+	    padding: 10px 5px;
+	}
+
+	.sizes_table .table_row .cell:nth-child(1) p {
+	    font-size: 13px;
+	    line-height: 15px;
+	}
+
+	.sizes {
+	    padding: 5px;
+	}
+
+	.sizes_table p {
+	    font-size: 13px;
+	    line-height: 16px;
+	}
+
+	.sizes_table .table_row .cell {
+	    padding: 5px 5px;
+	}
+
+	/*-- /Section 1 - Card Page --*/
+
 }
 
 @media only screen and (max-width: 560px) {
@@ -676,5 +1150,38 @@
 	}
 
 	/*-- /Header --*/
+
+	/*-- Section 1 - Orders Page --*/
+
+	.order_item .good_table_cell_1 .img_box {
+	    margin-bottom: 10px;
+	}
+
+	.order_item .cell:nth-child(2) {
+	    width: 50%;
+	}
+
+	.order_item .cell:nth-child(3) {
+	    width: 50%;
+	}
+
+	.order_item .cell:nth-child(4) {
+		width: 50%;
+	}
+
+	.order_item .cell:nth-child(5) {
+	    width: 50%;
+	}
+
+	.order_item .cell:nth-child(6) {
+	    width: 50%;
+	}
+
+	.order_item p {
+	    font-size: 19px;
+	    line-height: 22px;
+	}
+
+	/*-- /Section 1 - Orders Page --*/
 
 }
