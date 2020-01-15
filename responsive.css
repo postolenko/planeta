@@ -193,6 +193,14 @@
 		width: 100%;
 	}
 
+	.vishlist_table_header .cell:nth-child(1) {
+	    width: 45%;
+	}
+
+	.vishlist_table_header .cell:nth-child(2) {
+	    width: 55%;
+	}
+
 	.vishlist_item .cell:nth-child(1) {
 	    width: 45%;
 	}
@@ -398,6 +406,15 @@
 	}
 
 	/*-- /Section 1 - Settings Page --*/
+
+	/*-- Section 1 - Planet Page --*/
+
+	.image_wrapp {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	/*-- /Section 1 - Planet Page --*/
 
 
 }
@@ -761,7 +778,7 @@
 		padding-top: 65px;
 	}
 
-/*-- Header --*/
+/*-- Footer --*/
 
 	.footer {
 		display: block;
@@ -790,7 +807,7 @@
 	    padding: 7px 15px;
 	}
 
-/*-- /Header --*/
+/*-- /Footer --*/
 
 	/*-- Section 1 - Card Page --*/
 
@@ -852,6 +869,23 @@
 	}
 
 	/*-- /Section 1 - Search Page --*/
+
+	/*-- Section 1 - Planet Page --*/
+
+	.image_wrapp .promo_title {
+	    height: 20em;
+	    width: 20em;
+	}
+
+	.image_wrapp {
+		max-width: 300px;
+	}
+
+	.windowH {
+	    min-height: auto;
+	}
+
+	/*-- /Section 1 - Planet Page --*/
 
 }
 
@@ -1200,6 +1234,19 @@
 
 	/*-- /Section 1 - Settings Page --*/
 
+	/*-- Section 1 - Planet Page --*/
+
+	.left_image .image_link {
+	    top: 86%;
+	    left: -102px;
+	}
+
+	.image_wrapp {
+		max-width: 200px;
+	}
+
+	/*-- /Section 1 - Planet Page --*/
+
 }
 
 @media only screen and (max-width: 680px) {
@@ -1525,5 +1572,28 @@
 	}
 
 	/*-- /Section 1 - Orders Page --*/
+
+	/*-- Section 1 - Planet Page --*/
+
+	.planet_article {
+	    padding: 30px 0;
+	}
+
+	.planet_article p {
+		padding: 10px 0;
+		font-size: 20px;
+	}
+
+	.left_image .image_link {
+		white-space: nowrap;
+	    left: 0;
+	}
+
+	.right_image .image_link {
+		white-space: nowrap;
+	    right: 0;
+	}
+
+	/*-- /Section 1 - Planet Page --*/
 
 }
