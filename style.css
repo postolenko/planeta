@@ -3435,7 +3435,12 @@ button.minus_btn_2 {
 }
 
 .vishlist_item .cell:nth-child(2) {
-    width: 57%;
+    width: 15%;
+    padding: 0;
+}
+
+.vishlist_item .cell:nth-child(3) {
+    width: 42%;
     padding: 0;
 }
 
@@ -3465,16 +3470,7 @@ button.minus_btn_2 {
 }
 
 .good_options > div {
-    padding: 0 15px;
-}
-
-.good_options > div:nth-child(1) {
-    width: 17%;
-}
-
-.good_options .btn_box {
-    width: 100%;
-    max-width: 360px;
+    padding: 0 20px;
 }
 
 .good_options .btn_box a {
