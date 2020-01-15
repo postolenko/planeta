@@ -626,6 +626,27 @@ header {
     opacity: 1;
 }
 
+.resp_btn {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-image: url(img/down_arrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}
+
+.main_nav .resp_btn {
+    display: none;
+}
+
+.resp_btn.active {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
 /* ----- Responsive Menu Button ------ */
 
 .respmenubtn {
