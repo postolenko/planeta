@@ -3950,6 +3950,12 @@ footer {
 
 /*-- Popups --*/
 
+body.fixed {
+    width: 100%;
+    padding-right: 20px;
+    overflow: hidden;
+}
+
 .popup {
     display: none;
     width: 100%;
@@ -4146,14 +4152,12 @@ footer {
     right: 0;
 }
 
-/*-- /Popups --*/
-
-/*- Popups --*/
-
-body.fixed {
-    width: 100%;
-    padding-right: 20px;
-    overflow: hidden;
+.popup_content .enter_form_wrapp {
+    margin: 10px auto;
 }
 
-/*- /Popups --*/
+.popup_content .input_wrapp_2 {
+    margin: 20px 0;
+}
+
+/*-- /Popups --*/

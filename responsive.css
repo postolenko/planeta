@@ -550,6 +550,23 @@
 
 	/*-- /Section 1 - Vishlist Page --*/
 
+	/*-- Popups --*/
+
+	.search_nav li a {
+	    font-size: 24px;
+	    line-height: 30px;
+	}
+
+	.searc_2_form {
+	    margin: 30px 0;
+	}
+
+	.popup_title_wrapp {
+	    margin: 40px 0;
+	}
+
+	/*-- /Popups --*/
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -611,7 +628,7 @@
 .main_nav li .resp_btn {
 	display: block;
 	position: absolute;
-	top: 0;
+    top: 12px;
 	right: 20px;
 	z-index: 2;
 }
@@ -1303,6 +1320,21 @@
 
 	/*-- /Section 1 - Planet Page --*/
 
+	/*-- Popups --*/
+
+	.searc_2_form .search_btn {
+	    left: 0;
+	}
+
+	.searc_2_form input {
+	    margin-left: 40px;
+	    width: calc(100% - 50px);
+	    font-size: 25px;
+	    line-height: 40px;
+	}
+
+	/*-- /Popups --*/
+
 }
 
 @media only screen and (max-width: 680px) {
@@ -1505,6 +1537,25 @@
 	}
 
 	/*-- /Section 1 - Settings Page --*/
+
+	/*-- Popups --*/
+
+	.search_nav {
+		display: block;
+		margin: 15px 0;
+	}
+
+	.search_nav li {
+		display: block;
+	    padding: 0;
+	}
+
+	.search_nav li a {
+	    font-size: 20px;
+	    line-height: 25px;
+	}
+
+	/*-- /Popups --*/
 
 }
 
