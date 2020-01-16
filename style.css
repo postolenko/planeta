@@ -16,7 +16,6 @@
     font-style: normal;
 }
 
-
 /*-------------------------------------------*/
 /* BASIC SETUP */
 /*-------------------------------------------*/
@@ -77,23 +76,6 @@ footer {
     flex: 0 0 auto;
     -webkit-flex: 0 0 auto;
 }
-
-.clearfix:after {
-    content: ""; 
-    display: block; 
-    height: 0; 
-    clear: both; 
-    visibility: hidden;
-}
-
-.clearfix {display: inline-block;}
-
-* html .clearfix {height: 1%;}
-.clearfix {display: block;}
-
-* html .clearfix             { zoom: 1; }
-*:first-child+html .clearfix { zoom: 1; }
-
 
 ::-webkit-input-placeholder {color:#555555;}
 ::-moz-placeholder          {color:#555555;}
@@ -174,7 +156,12 @@ section {
 }
 
 h1 {
-
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: normal;
+    color: #2c2c2c;
 }
 
 h2 {
@@ -241,22 +228,6 @@ a:hover,
 a:active {
     -webkit-tap-highlight-color: rgba(0,0,0,0); 
     -webkit-tap-highlight-color: transparent;
-}
-
-input {
-
-}
-
-input:focus {
-
-}
-
-textarea {
-
-}
-
-textarea:focus {
-
 }
 
 /*-- Icons --*/
@@ -454,62 +425,6 @@ textarea:focus {
 }
 
 /*-- /Slick --*/
-
-/*-- Breadcrumbs --*/
-
-/*.breadcrumbs_wrapp {
-    padding: 40px 0 20px 0;
-}
-
-.breadcrumbs li {
-    display: inline-block;
-    vertical-align: top;
-    padding: 0 5px;
-}
-
-.breadcrumbs li:after {
-    position: relative;
-    top: -2px;
-    left: 5px;
-    content: "\2192";
-    font-size: 13px;
-    line-height: 23px;
-    color: #333333;
-}
-
-.breadcrumbs li:last-child:after {
-    display: none;
-}
-
-.breadcrumbs li a {
-    border-bottom: 1px solid transparent;
-    font-size: 18px;
-    line-height: 23px;
-    color: #333333;
-}
-
-.breadcrumbs li a:link,
-.breadcrumbs li a:visited {
-    border-bottom: 1px solid transparent;
-}
-
-.breadcrumbs li a:active,
-.breadcrumbs li a.active {
-    border-bottom: 1px solid #333333;
-}
-
-.breadcrumbs li a:hover {
-    border-bottom: 1px solid #333333;
-}
-
-.breadcrumbs li:last-child a {
-    pointer-events: none;
-    cursor: default;
-    opacity: .6;
-    border-bottom: 1px solid transparent;
-}*/
-
-/*-- /Breadcrumbs --*/
 
 /*-------------------------------------------*/
 /* ----- HEADER ------ */
@@ -1290,7 +1205,6 @@ header {
 .catalog_sect .side_nav {
     position: absolute;
     top: 30px;
-    /*left: 0;*/
     left: -25px;
     z-index: 2;
 }
@@ -2460,39 +2374,41 @@ header {
     font-size: 32px;
     line-height: 36px;
     color: #424242;
-    -webkit-transition-property: border;
+    -webkit-transition-property: background, color;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
 
-    -moz-transition-property: border;
+    -moz-transition-property: background, color;
     -moz-transition-duration: .3s;
     -moz-transition-timing-function: ease;
 
-    -ms-transition-property: border;
+    -ms-transition-property: background, color;
     -ms-transition-duration: .3s;
     -ms-transition-timing-function: ease;
 
-    -o-transition-property: border;
+    -o-transition-property: background, color;
     -o-transition-duration: .3s;
     -o-transition-timing-function: ease;
 
-    transition-property: border;
+    transition-property: background, color;
     transition-duration: .3s;
     transition-timing-function: ease;
 }
 
 .grey_btn:link,
 .grey_btn:visited {
-    /*border-bottom: 1px solid #2c2c2c;*/
+    background-color: rgb(179, 179, 179);
 }
 
 .grey_btn:active,
 .grey_btn.active {
-    /*border-bottom: 1px solid transparent;*/
+    background-color: rgb(53, 53, 53);
+    color: #ffffff;
 }
 
 .grey_btn:hover {
-    /*border-bottom: 1px solid transparent;*/
+    background-color: rgb(53, 53, 53);
+    color: #ffffff;
 }
 
 .submit_wrapp {
@@ -2535,10 +2451,6 @@ header {
 
 .input_wrapp_2 input::placeholder {
     color: #b0b0b0;
-}
-
-.checkbox_dark {
-
 }
 
 .checkbox_dark:before {
@@ -2735,7 +2647,6 @@ header {
 }
 
 .profile_wrapp {
-    /*max-width: 768px;*/
     width: calc(100% - 800px);
     margin: 0 auto;
     display: flex;
@@ -2939,39 +2850,42 @@ header {
     font-size: 25px;
     line-height: 30px;
     color: #ffffff;
-    -webkit-transition-property: border;
+    -webkit-transition-property: border, background;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
 
-    -moz-transition-property: border;
+    -moz-transition-property: border, background;
     -moz-transition-duration: .3s;
     -moz-transition-timing-function: ease;
 
-    -ms-transition-property: border;
+    -ms-transition-property: border, background;
     -ms-transition-duration: .3s;
     -ms-transition-timing-function: ease;
 
-    -o-transition-property: border;
+    -o-transition-property: border, background;
     -o-transition-duration: .3s;
     -o-transition-timing-function: ease;
 
-    transition-property: border;
+    transition-property: border, background;
     transition-duration: .3s;
     transition-timing-function: ease;
 }
 
 .dark_btn_2:link,
 .dark_btn_2:visited {
-    /*border-bottom: 1px solid #2c2c2c;*/
+    border-color: #000000;
+    background-color: #000000;
 }
 
 .dark_btn_2:active,
 .dark_btn_2.active {
-    /*border-bottom: 1px solid transparent;*/
+    border-color: #000000;
+    background-color: #000000;
 }
 
 .dark_btn_2:hover {
-    /*border-bottom: 1px solid transparent;*/
+    border-color: #000000;
+    background-color: #000000;
 }
 
 /*-- /Section 1 - Settings Page --*/
@@ -3112,10 +3026,6 @@ header {
 .good_table_cell_2 {
     width: calc(100% - 220px);
     padding-left: 10px;
-}
-
-.good_table_cell_1 {
-
 }
 
 .good_table_cell_1 .img_box {
@@ -3554,14 +3464,6 @@ button.minus_btn_2 {
     display: none;
 }
 
-.checkout_table .cell {
-
-}
-
-.checkout_table .cell {
-
-}
-
 .checkout_table h3 {
     text-align: center;
     font-size: 30px;
@@ -3707,10 +3609,6 @@ button.minus_btn_2 {
     color: #ffffff;
 }
 
-.input_wrapp_4 {
-
-}
-
 textarea {
     width: 100%;
     margin: 19px 0;
@@ -3824,11 +3722,6 @@ textarea {
 }
 
 /*-- /Section 1 - Search Page --*/
-
-
-
-
-
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
