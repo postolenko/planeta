@@ -5,7 +5,8 @@
 # http://postolenko.github.io/planeta/checkout.html
 # http://postolenko.github.io/planeta/enter.html
 # http://postolenko.github.io/planeta/orders.html
-# http://postolenko.github.io/planeta/planet.html
+# http://postolenko.github.io/planeta/mens_collection.html
+# http://postolenko.github.io/planeta/woomens_collection.html
 # http://postolenko.github.io/planeta/profile.html
 # http://postolenko.github.io/planeta/registration.html
 # http://postolenko.github.io/planeta/search.html
