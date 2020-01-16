@@ -439,6 +439,7 @@ header {
     display: -webkit-flex;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
+    align-items: center;
     padding: 5px 0;
 }
 
@@ -449,8 +450,7 @@ header {
 
 .header_site .center_col {
     width: 240px;
-    padding: 10px 10px;
-    text-align: center;
+    padding: 0 10px;
 }
 
 .header_site .right_col {
@@ -464,8 +464,8 @@ header {
 
 .logo {
     display: block;
-    max-width: 225px;
-    margin: 12px auto;
+    max-width: 130px;
+    margin: 0 auto;
 }
 
 .logo img {
