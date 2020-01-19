@@ -904,9 +904,19 @@ header {
 
 .main_header {
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
+}
+
+.main_header.fixed {
+    background: #ffffff;
+    border-bottom: 2px solid #c7c7c7;
+}
+
+.main_header.background {
+    background: #ffffff;
+    border-bottom: 2px solid #c7c7c7;
 }
 
 /*------------------*/
@@ -1076,6 +1086,7 @@ header {
     top: 50%;
     left: 0;
     opacity: .15;
+    z-index: 2;
     -webkit-transform: translate(0, -50%);
     -moz-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -1382,6 +1393,10 @@ header {
     display: block;
     width: calc(33.33% - 100px);
     margin: 30px 50px;
+}
+
+.good_thumb.z_index {
+    z-index: 3;
 }
 
 .good_thumb .img_box {
@@ -2366,10 +2381,6 @@ header {
 /*-- /Section 2 - Planet Page --*/
 
 /*-- Section 1 - Enter Page --*/
-
-.main_header.fixed {
-    position: relative;
-}
 
 .enter_form_wrapp {
     max-width: 640px;
@@ -3892,6 +3903,10 @@ textarea::placeholder {
     position: absolute;
     top: 12px;
     right: 0;
+}
+
+.zIndexPlanet {
+    z-index: 3;
 }
 
 .good_thumbnails_2 {
