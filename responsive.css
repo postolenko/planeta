@@ -540,9 +540,28 @@
 		display: none;
 	}
 
+	.checkout_table_2 .cell:nth-child(1) {
+		width: 50%;
+	}
+	.checkout_table_2 .cell:nth-child(2) {
+		width: 50%;
+	}
+	.checkout_table_2 .cell:nth-child(3) {
+		width: 100%;
+	}
+
 	/*-- /Section 1 - Chekout Page --*/
 
 	/*-- Section 1 - Vishlist Page --*/
+
+	.resp_title {
+	    display: block;
+	    padding-top: 20px;
+	}
+
+	.vishlist_item .p_resp {
+		display: block;
+	}
 
 	.vishlist_table_header {
 		display: none;
@@ -563,6 +582,14 @@
 
 	.popup_title_wrapp {
 	    margin: 40px 0;
+	}
+
+	.credit_card {
+	    padding: 7px 3% 15px 3%;
+	}
+
+	.credit_card:before {
+	    right: 180px;
 	}
 
 	/*-- /Popups --*/
@@ -629,7 +656,7 @@
 	display: block;
 	position: absolute;
     top: 12px;
-	right: 20px;
+	right: 0;
 	z-index: 2;
 }
 
@@ -638,7 +665,7 @@
 	opacity: 1;
 	min-width: 100%;
 	margin-top: 20px;
-	padding-left: 10px;
+    padding-left: 20px;
 	min-height: auto;
 	position: relative;
 	top: 0 !important;
@@ -699,16 +726,14 @@
 
 /*-- Section 1 - Maine Page --*/
 
-.promo_templ .left_col {
-    width: 40%;
-}
-
-.promo_templ .right_col {
-    width: 60%;
-}
-
 .promo_title {
-    top: -19px;
+	height: 21em;
+    width: 21em;
+}
+
+.h1_wrapp h1 {
+    font-size: 29px;
+    line-height: 37px;
 }
 
 /*-- /Section 1 - Maine Page --*/
@@ -843,12 +868,41 @@
 
 /*-- /Section 1 - Vishlist Page --*/
 
+/*-- Popups --*/
+
+.credit_card {
+    background-image: none;
+    background-color: #d4d4d4;
+}
+
+.credit_card_inner {
+	margin: 0 auto;
+}
+
+.credit_card:before {
+	display: none;
+}
+
+.credit_card:after {
+	display: none;
+}
+
+/*-- /Popups --*/
+
 }
 
 @media only screen and (max-width: 900px) {
 
 	.resp_wrapper {
 		padding-top: 65px;
+	}
+
+	.resp_content {
+	    display: block;
+	}
+
+	.desc_novisible {
+		display: none;
 	}
 
 /*-- Footer --*/
@@ -892,7 +946,10 @@
 	.card_templ .left_col {
 	    width: 100%;
 	    padding: 10px 0;
-	    max-width: 750px;
+	}
+
+	.card_slider_wrapp {
+		max-width: 750px;
 	    margin: 0 auto;
 	}
 
@@ -973,12 +1030,20 @@
 	    line-height: 37px;
 	}
 
+	.page_title {
+	    padding: 10px 0;
+	}
+
 	.planeta_img_2 {
 		display: none;
 	}
 
 	.planeta_img_3 {
 		display: none;
+	}
+
+	.breadcrumbs {
+	    margin: 0 -20px;
 	}
 
 	/*-- Header --*/
@@ -1127,6 +1192,37 @@
 	/*-- /Section 1 - Basket Page --*/
 
 	/*-- Section 1 - Card Page --*/
+
+	.card_title {
+		display: block;
+	    margin: 0;
+	}
+
+	.card_title.desc_novisible {
+		display: none;
+	}
+
+	.card_title div {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.card_title div:after {
+		display: none;
+	}
+
+	.card_title h2 {
+		display: block;
+		text-align: left;
+	    font-size: 25px;
+	    line-height: 30px;
+	}
+
+	.card_title p {
+		display: block;
+	    font-size: 28px;
+	    line-height: 50px;
+	}
 
 	.card_slider_big .slide .img_box {
 	    height: 300px;
@@ -1323,8 +1419,13 @@
 	/*-- Section 1 - Planet Page --*/
 
 	.left_image .image_link {
+		background: rgba(255, 255, 255, .7);
 	    top: 86%;
 	    left: -102px;
+	}
+
+	.right_image .image_link {
+		background: rgba(255, 255, 255, .7);
 	}
 
 	.image_wrapp {
@@ -1332,6 +1433,18 @@
 	}
 
 	/*-- /Section 1 - Planet Page --*/
+
+	.catalog_sect .breadcrumbs {
+    	margin-bottom: 20px;
+	}
+
+	/*-- Section 1 - Vishlist Page --*/
+
+	.vishlist_wrapp {
+	    margin-bottom: 30px;
+	}
+
+	/*-- /Section 1 - Vishlist Page --*/
 
 	/*-- Popups --*/
 
@@ -1346,7 +1459,26 @@
 	    line-height: 40px;
 	}
 
+	.radio_wrapp {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.radio_wrapp .cell:nth-child(1) {
+	    width: 100%;
+	    padding: 0 0 20px;
+	    text-align: left;
+	}
+
 	/*-- /Popups --*/
+
+	.resp_item {
+		display: none;
+	}
+
+	.resp_link_wrapp {
+		display: block;
+	}
 
 }
 
@@ -1715,5 +1847,31 @@
 	}
 
 	/*-- /Section 1 - Planet Page --*/
+
+	/*-- Popups --*/
+
+	.radio_wrapp {
+	    margin: 15px 0 0 0;
+	}
+
+	.input_1 input,
+	.input_2 input,
+	.input_3 input {
+		width: 100%;
+	}
+
+	.price_input {
+		width: 250px;
+	}
+
+	/*-- /Popups --*/
+
+}
+
+@media only screen and (min-width: 1025px) {
+
+	.sub_menu {
+		display: flex !important;
+	}
 
 }

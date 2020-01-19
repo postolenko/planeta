@@ -79,23 +79,23 @@
 					<div class="icons_thumbs" id="respIcons">
 						<div class="resp_append">
 							<div class="search_wrapp">
-								<a href="#" data-popup-link = "popup_1"><i class="search"></i></a>
+								<a href="#" class="icon_link" data-popup-link = "popup_1"><i class="search"></i></a>
 							</div>
 						</div>
 						<div class="resp_append">
 							<div class="user_wrapp">
-								<a href="#" data-popup-link = "popup_2"><i class="user"></i></a>
+								<a href="#" class="icon_link active" data-popup-link = "popup_2"><i class="user"></i></a>
 							</div>
 						</div>
 						<div class="resp_append">
 							<div class="like_wrapp">
-								<a href="#"><i class="heart"></i></a>
+								<a href="#" class="icon_link"><i class="heart"></i></a>
 								<div class="count_circle">1</div>
 							</div>
 						</div>
 						<div class="resp_append">
 							<div class="basket_wrapp">
-								<a href="#"><i class="cart"></i></a>
+								<a href="#" class="icon_link"><i class="cart"></i></a>
 								<div class="count_circle">99</div>
 							</div>
 						</div>
@@ -234,8 +234,17 @@
 										<label>Страна получателя</label>
 									</div>
 									<div class="col_2">
-										<div class="input_wrapp_3">
-											<input type="text" />
+										<div class="dropdown_select dark_select">
+											<div class="active_val">
+												<input type="text" value="" readonly/>
+											</div>
+											<div class="dropdown_box">
+												<ul class="vals_list">
+													<li>Страна 1</li>
+													<li>Страна 2</li>
+													<li>Страна 3</li>
+												</ul>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -244,8 +253,17 @@
 										<label>Способ доставки</label>
 									</div>
 									<div class="col_2">
-										<div class="input_wrapp_3">
-											<input type="email" />
+										<div class="dropdown_select dark_select">
+											<div class="active_val">
+												<input type="text" value="" readonly/>
+											</div>
+											<div class="dropdown_box">
+												<ul class="vals_list">
+													<li>Способ 1</li>
+													<li>Способ 2</li>
+													<li>Способ 3</li>
+												</ul>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -254,8 +272,17 @@
 										<label>Город</label>
 									</div>
 									<div class="col_2">
-										<div class="input_wrapp_3">
-											<input type="password" />
+										<div class="dropdown_select dark_select">
+											<div class="active_val">
+												<input type="text" value="" readonly/>
+											</div>
+											<div class="dropdown_box">
+												<ul class="vals_list">
+													<li>Город 1</li>
+													<li>Город 2</li>
+													<li>Город 3</li>
+												</ul>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -264,8 +291,17 @@
 										<label>Адрес, № отделения</label>
 									</div>
 									<div class="col_2">
-										<div class="input_wrapp_3">
-											<input type="password" />
+										<div class="dropdown_select dark_select">
+											<div class="active_val">
+												<input type="text" value="" readonly/>
+											</div>
+											<div class="dropdown_box">
+												<ul class="vals_list">
+													<li>Адрес 1</li>
+													<li>Адрес 2</li>
+													<li>Адрес 3</li>
+												</ul>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -289,11 +325,11 @@
 	<!-- Footer -->
 
 		<footer class="footer_section">
-			<div class="main_row">
+			<div class="row_3">
 				<div class="footer">
 					<div class="left_col">
 						<ul class="footer_nav">
-							<li><a href="#"><i class="copy"></i>2019 PLANETA</a></li>
+							<li class="resp_item"><a href="#"><i class="copy"></i>2019 PLANETA</a></li>
 							<li><a href="#">FAQs</a></li>
 							<li><a href="#">СВЯЗАТЬСЯ С НАМИ</a></li>
 						</ul>
@@ -304,6 +340,9 @@
 							<li><a href="#"><img src="img/instagram.svg" alt="" /></a></li>
 							<li><a href="#"><img src="img/telegram.svg" alt="" /></a></li>
 						</ul>
+					</div>
+					<div class="resp_link_wrapp">
+						<a href="#" class="resp_link"><i class="copy"></i>2019 PLANETA</a>
 					</div>
 				</div>
 			</div>
@@ -387,7 +426,7 @@
 			</div>
 		</div>
 	</div>
-
+	
 	<!-- Popups -->
 
 	<link rel="stylesheet" type="text/css" href="responsive.css">

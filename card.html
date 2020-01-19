@@ -26,7 +26,7 @@
 						<ul class="main_nav">
 							<li><a href="#">Главная</a></li>
 							<li>
-								<a href="#">Магазин</a>
+								<a href="#" class="active">Магазин</a>
 								<button type="button" class="resp_btn"></button>
 								<div class="sub_menu">
 									<div class="sub_col">
@@ -77,23 +77,23 @@
 					<div class="icons_thumbs" id="respIcons">
 						<div class="resp_append">
 							<div class="search_wrapp">
-								<a href="#" data-popup-link = "popup_1"><i class="search"></i></a>
+								<a href="#" class="icon_link" data-popup-link = "popup_1"><i class="search"></i></a>
 							</div>
 						</div>
 						<div class="resp_append">
 							<div class="user_wrapp">
-								<a href="#" data-popup-link = "popup_2"><i class="user"></i></a>
+								<a href="#" class="icon_link" data-popup-link = "popup_2"><i class="user"></i></a>
 							</div>
 						</div>
 						<div class="resp_append">
 							<div class="like_wrapp">
-								<a href="#"><i class="heart"></i></a>
+								<a href="#" class="icon_link"><i class="heart"></i></a>
 								<div class="count_circle">1</div>
 							</div>
 						</div>
 						<div class="resp_append">
 							<div class="basket_wrapp">
-								<a href="#"><i class="cart"></i></a>
+								<a href="#" class="icon_link"><i class="cart"></i></a>
 								<div class="count_circle">99</div>
 							</div>
 						</div>
@@ -171,8 +171,38 @@
 			<img class="planeta_img_6 opacity_2" src="img/planeta_bg.svg" alt="Planeta">
 			<img class="planeta_img_7 opacity_2" src="img/planeta_bg.svg" alt="Planeta">
 			<div class="row">
+				<ul class="breadcrumbs">
+					<li><a href="#">Магазин</a></li>
+					<li><a href="#">Шорты карго</a></li>
+				</ul>
 				<div class="card_templ">
 					<div class="left_col">
+						<div class="resp_content">
+							<div class="card_title">
+								<div>
+									<h2>Шорты карго</h2>
+								</div>
+								<div>
+									<p>780 ₴</p>
+								</div>
+							</div>
+							<div class="rate_wrapp">
+								<div class="bg_rate">
+									<i class="bg_star"></i>
+									<i class="bg_star"></i>
+									<i class="bg_star"></i>
+									<i class="bg_star"></i>
+									<i class="bg_star"></i>
+								</div>
+								<div class="rating_stars">
+									<div class="rating" data-rating="4.5"></div>
+								</div>
+							</div>
+							<ul class="list_1">
+								<li>35% Хлопок</li>
+								<li>65% Полиэстер</li>
+							</ul>
+						</div>
 						<div class="card_slider_wrapp">
 							<div class="card_slider_big">
 								<div class="slide">
@@ -217,7 +247,7 @@
 						</div>
 					</div>
 					<div class="right_col">
-						<div class="card_title">
+						<div class="card_title desc_novisible">
 							<div>
 								<h2>Шорты карго</h2>
 							</div>
@@ -226,7 +256,7 @@
 							</div>
 						</div>
 						<div>
-							<div class="rate_wrapp">
+							<div class="rate_wrapp desc_novisible">
 								<div class="bg_rate">
 									<i class="bg_star"></i>
 									<i class="bg_star"></i>
@@ -239,7 +269,7 @@
 								</div>
 							</div>
 						</div>
-						<ul class="list_1">
+						<ul class="list_1 desc_novisible">
 							<li>35% Хлопок</li>
 							<li>65% Полиэстер</li>
 						</ul>
@@ -404,11 +434,11 @@
 	<!-- Footer -->
 
 		<footer class="footer_section">
-			<div class="row">
+			<div class="row_3">
 				<div class="footer">
 					<div class="left_col">
 						<ul class="footer_nav">
-							<li><a href="#"><i class="copy"></i>2019 PLANETA</a></li>
+							<li class="resp_item"><a href="#"><i class="copy"></i>2019 PLANETA</a></li>
 							<li><a href="#">FAQs</a></li>
 							<li><a href="#">СВЯЗАТЬСЯ С НАМИ</a></li>
 						</ul>
@@ -420,10 +450,12 @@
 							<li><a href="#"><img src="img/telegram.svg" alt="" /></a></li>
 						</ul>
 					</div>
+					<div class="resp_link_wrapp">
+						<a href="#" class="resp_link"><i class="copy"></i>2019 PLANETA</a>
+					</div>
 				</div>
 			</div>
 		</footer>
-
 	<!-- /Footer -->
 
 	</div>

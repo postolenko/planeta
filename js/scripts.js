@@ -164,14 +164,16 @@ $(document).ready(function() {
     if( $(".card_slider_big").length > 0 ) {
         $(".card_slider_big").not(".slick-initialized").slick({
             dots: false,
-            arrows: false,
+            arrows: true,
             autoplay: true,
             autoplaySpeed: 4000,
             speed: 1200,
             slidesToShow: 1,
             slidesToScroll: 1,
             asNavFor: ".card_slider_miniatures",
-            fade: true
+            fade: true,
+            prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"><img src="img/down_arrow.svg"></button>',
+            nextArrow: '<button class="slick-next" aria-label="Next" type="button"><img src="img/down_arrow.svg"></button>'
         });
 
         $(".card_slider_miniatures").not(".slick-initialized").slick({
@@ -351,12 +353,7 @@ $(document).ready(function() {
 
     $(this).keydown(function(eventObject){
         if (eventObject.which == 27 ) {
-            curTop = $("body").css("top");
-            curTop = Math.abs(parseInt(curTop, 10));
             $("body").attr("style", "")
-            if (curTop !== 0) {
-                $("html").scrollTop(curTop);
-            }
             $("body").removeClass("fixed");
             $("[data-popup]").fadeOut(300);
         }

@@ -28,7 +28,7 @@
 						<ul class="main_nav">
 							<li><a href="#">Главная</a></li>
 							<li>
-								<a href="#">Магазин</a>
+								<a href="#" class="active">Магазин</a>
 								<button type="button" class="resp_btn"></button>
 								<div class="sub_menu">
 									<div class="sub_col">
@@ -79,23 +79,23 @@
 					<div class="icons_thumbs" id="respIcons">
 						<div class="resp_append">
 							<div class="search_wrapp">
-								<a href="#" data-popup-link = "popup_1"><i class="search"></i></a>
+								<a href="#" class="icon_link" data-popup-link = "popup_1"><i class="search"></i></a>
 							</div>
 						</div>
 						<div class="resp_append">
 							<div class="user_wrapp">
-								<a href="#" data-popup-link = "popup_2"><i class="user"></i></a>
+								<a href="#" class="icon_link" data-popup-link = "popup_2"><i class="user"></i></a>
 							</div>
 						</div>
 						<div class="resp_append">
 							<div class="like_wrapp">
-								<a href="#"><i class="heart"></i></a>
+								<a href="#" class="icon_link active"><i class="heart"></i></a>
 								<div class="count_circle">1</div>
 							</div>
 						</div>
 						<div class="resp_append">
 							<div class="basket_wrapp">
-								<a href="#"><i class="cart"></i></a>
+								<a href="#" class="icon_link"><i class="cart"></i></a>
 								<div class="count_circle">99</div>
 							</div>
 						</div>
@@ -170,68 +170,71 @@
 		<section class="profile_sect">
 			<img class="planeta_img_7" src="img/planeta_bg.svg" alt="Planeta">
 			<div class="row">
-				<div class="vishlist_table_header">
-					<div class="cell">
-						<p>Вишлист</p>
+				<h2 class="resp_title">ВИШЛИСТ</h2>
+				<div class="vishlist_wrapp">
+					<div class="vishlist_table_header">
+						<div class="cell">
+							<p>ВИШЛИСТ</p>
+						</div>
+						<div class="cell">
+							<p>Цена</p>
+						</div>
 					</div>
-					<div class="cell">
-						<p>Цена</p>
-					</div>
-				</div>
-				<div class="vishlist_item">
-					<div class="cell">
-						<div class="good_table">
-							<div class="good_table_cell_1">
-								<div class="img_box">
-									<img src="img/good_08.jpg" alt="">
+					<div class="vishlist_item">
+						<div class="cell">
+							<div class="good_table">
+								<div class="good_table_cell_1">
+									<div class="img_box">
+										<img src="img/good_08.jpg" alt="">
+									</div>
+								</div>
+								<div class="good_table_cell_2">
+									<h3>шорты карго</h3>
+									<p>цвет хаки</p>
 								</div>
 							</div>
-							<div class="good_table_cell_2">
-								<h3>шорты карго</h3>
-								<p>цвет хаки</p>
-							</div>
 						</div>
-					</div>
-					<div class="cell">
-						<p class="p_resp">Цена</p>
-						<p>780 ₴</p>
-					</div>
-					<div class="cell">
-						<div class="good_options">
-							<div class="btn_box">
-								<a href="#" class="white_pill">Добавить в корзину</a>
-							</div>
-							<div class="btn_box">
-								<a href="#" class="dark_pill">Купить сейчас</a>
-							</div>
+						<div class="cell">
+							<p class="p_resp">Цена</p>
+							<p>780 ₴</p>
 						</div>
-					</div>
-				</div>
-				<div class="vishlist_item">
-					<div class="cell">
-						<div class="good_table">
-							<div class="good_table_cell_1">
-								<div class="img_box">
-									<img src="img/good_08.jpg" alt="">
+						<div class="cell">
+							<div class="good_options">
+								<div class="btn_box">
+									<a href="#" class="white_pill">Добавить в корзину</a>
+								</div>
+								<div class="btn_box">
+									<a href="#" class="dark_pill">Купить сейчас</a>
 								</div>
 							</div>
-							<div class="good_table_cell_2">
-								<h3>шорты карго</h3>
-								<p>цвет хаки</p>
-							</div>
 						</div>
 					</div>
-					<div class="cell">
-						<p class="p_resp">Цена</p>
-						<p>780 ₴</p>
-					</div>
-					<div class="cell">
-						<div class="good_options">
-							<div class="btn_box">
-								<a href="#" class="white_pill">Добавить в корзину</a>
+					<div class="vishlist_item">
+						<div class="cell">
+							<div class="good_table">
+								<div class="good_table_cell_1">
+									<div class="img_box">
+										<img src="img/good_08.jpg" alt="">
+									</div>
+								</div>
+								<div class="good_table_cell_2">
+									<h3>шорты карго</h3>
+									<p>цвет хаки</p>
+								</div>
 							</div>
-							<div class="btn_box">
-								<a href="#" class="dark_pill">Купить сейчас</a>
+						</div>
+						<div class="cell">
+							<p class="p_resp">Цена</p>
+							<p>780 ₴</p>
+						</div>
+						<div class="cell">
+							<div class="good_options">
+								<div class="btn_box">
+									<a href="#" class="white_pill">Добавить в корзину</a>
+								</div>
+								<div class="btn_box">
+									<a href="#" class="dark_pill">Купить сейчас</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -247,11 +250,11 @@
 	<!-- Footer -->
 
 		<footer class="footer_section">
-			<div class="main_row">
+			<div class="row_3">
 				<div class="footer">
 					<div class="left_col">
 						<ul class="footer_nav">
-							<li><a href="#"><i class="copy"></i>2019 PLANETA</a></li>
+							<li class="resp_item"><a href="#"><i class="copy"></i>2019 PLANETA</a></li>
 							<li><a href="#">FAQs</a></li>
 							<li><a href="#">СВЯЗАТЬСЯ С НАМИ</a></li>
 						</ul>
@@ -262,6 +265,9 @@
 							<li><a href="#"><img src="img/instagram.svg" alt="" /></a></li>
 							<li><a href="#"><img src="img/telegram.svg" alt="" /></a></li>
 						</ul>
+					</div>
+					<div class="resp_link_wrapp">
+						<a href="#" class="resp_link"><i class="copy"></i>2019 PLANETA</a>
 					</div>
 				</div>
 			</div>
