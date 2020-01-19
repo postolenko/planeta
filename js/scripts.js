@@ -359,19 +359,4 @@ $(document).ready(function() {
         }
     });
 
-    // $(".popup_sect").mouseup(function (e){
-    //     hide_element = $(".popup_wrapp");
-    //     if (!hide_element.is(e.target)
-    //         && hide_element.has(e.target).length === 0) {
-    //         curTop = $("body").css("top");
-    //         curTop = Math.abs(parseInt(curTop, 10));
-    //         $("body").attr("style", "")
-    //         if (curTop !== 0) {
-    //             $("html").scrollTop(curTop);
-    //         }
-    //         $("body").removeClass("fixed");
-    //         $("[data-popup]").fadeOut(300);
-    //     }
-    // });
-
 });

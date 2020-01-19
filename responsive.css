@@ -1017,6 +1017,38 @@
 
 	/*-- /Section 1 - Planet Page --*/
 
+	/*-- Section 1 - Sign Page --*/
+
+	.sign_templ .flex_box {
+		display: block;
+		margin: 0 -15px;
+	}
+
+	.sign_templ .left_col {
+	    width: 100%;
+	}
+
+	.sign_templ .right_col {
+	    width: 100%;
+	}
+
+	.sign_templ:before {
+		display: none;
+	}
+
+	.sign_templ:after {
+		display: none;
+	}
+
+	.planeta_img_2,
+	.planeta_img_3,
+	.planeta_img_4,
+	.planeta_img_5 {
+		display: none;
+	}
+
+	/*-- /Section 1 - Sign Page --*/
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -1589,7 +1621,6 @@
 	}
 
 	/*-- /Section 1 - Basket Page --*/
-
 
 	/*-- Section 1 - Card Page --*/
 

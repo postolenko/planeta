@@ -12,3 +12,4 @@
 # http://postolenko.github.io/planeta/settings.html
 # http://postolenko.github.io/planeta/wishlist.html
 # http://postolenko.github.io/planeta/rekvizity.html
+# http://postolenko.github.io/planeta/sign.html
