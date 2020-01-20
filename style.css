@@ -915,7 +915,7 @@ header {
 }
 
 .main_header.background {
-    background: #ffffff;
+    background: #ffffff !important;
     border-bottom: 2px solid #c7c7c7;
 }
 
@@ -2823,7 +2823,8 @@ header {
 
 /*-- Section 1 - Profile Page --*/
 
-.transparent_bg {
+.main_header.transparent_bg {
+    background: transparent;
     border-bottom: 2px solid #c7c7c7;
 }
 
