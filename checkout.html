@@ -176,8 +176,8 @@
 				</ul>
 				<div class="checkout_templ">
 					<h3>Оформление заказа</h3>
-					<div class="checkout_wrapp shape">
-						<form>
+					<form>
+						<div class="checkout_wrapp shape">
 							<div class="checkout_table">
 								<div class="cell">
 									<h3>КОНТАКТАЯ ИНФОРМАЦИЯ</h3>
@@ -249,18 +249,16 @@
 									<h3>ОПЛАТА</h3>
 									<div class="radios">
 										<div class="radio_wrapp">
-											<label class="radio" for="radio_1"><input type="radio" name="radios" checked id="radio_1">При получении</label>
+											<label class="radio" for="radio_10"><input type="radio" name="radios" checked id="radio_10">При получении</label>
 										</div>
 										<div class="radio_wrapp">
-											<label class="radio" for="radio_2"><input type="radio" name="radios" id="radio_2">При получении</label>
+											<label class="radio" for="radio_21"><input type="radio" name="radios" id="radio_21">При получении</label>
 										</div>
 									</div>
 								</div>
 							</div>
-						</form>
-					</div>
-					<div class="checkout_wrapp">
-						<form>
+						</div>
+						<div class="checkout_wrapp">
 							<div class="checkout_table checkout_table_2">
 								<div class="cell">
 									<h3>Наименование</h3>
@@ -281,16 +279,16 @@
 									</div>
 								</div>
 							</div>
-						</form>
-					</div>
-					<div class="basket_footer_wrapp">
-						<div class="basket_footer no_border">
-							<div class="price_wrapp"><p>итого:</p><p id="total_price">10 000</p><p>₴</p></div>
 						</div>
-						<div class="basket_btn_wrapp">
-							<input type="submit" class="dark_btn" value="оформить заказ" />
+						<div class="basket_footer_wrapp">
+							<div class="basket_footer no_border">
+								<div class="price_wrapp"><p>итого:</p><p id="total_price">10 000</p><p>₴</p></div>
+							</div>
+							<div class="basket_btn_wrapp">
+								<input type="submit" class="dark_btn" value="оформить заказ" />
+							</div>
 						</div>
-					</div>
+					</form>
 				</div>
 			</div>
 		</section>
@@ -347,16 +345,24 @@
 				</div>
 				<div class="popup_search_form">
 					<div>
-						<ul class="search_nav">
-							<li><a href="#">ВСЕ КАТЕГОРИИ</a></li>
-							<li><a href="#">ЖЕНСКАЯ КОЛЛЕКЦИЯ</a></li>
-							<li><a href="#">МУЖСКАЯ КОЛЛЕКЦИЯ</a></li>
-						</ul>
-						<div class="searc_2_form">
-							<button type="submit" class="search_btn"><i class="search_icon"></i></button>
-							<input type="text" placeholder="Поиск" />
-							<button type="button" class="reset_btn"></button>
-						</div>
+						<form>
+							<div class="radios_nav">
+								<div class="line_radio">
+									<label for="radio_1"><input checked type="radio" name="categories" id="radio_1"><span>ВСЕ КАТЕГОРИИ</span></label>
+								</div>
+								<div class="line_radio">
+									<label for="radio_2"><input type="radio" name="categories" id="radio_2"><span>ЖЕНСКЯА КОЛЛЕКЦИЯ</span></label>
+								</div>
+								<div class="line_radio">
+									<label for="radio_3"><input type="radio" name="categories" id="radio_3"><span>МУЖСКАЯ КОЛЛЕКЦИЯ</span></label>
+								</div>
+							</div>
+							<div class="searc_2_form">
+								<button type="submit" class="search_btn"><i class="search_icon"></i></button>
+								<input type="text" placeholder="Поиск" />
+								<button type="button" class="reset_btn"></button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>

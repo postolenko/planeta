@@ -305,6 +305,17 @@
 								</div>
 							</div>
 						</div>
+						<div class="pagination_wrapp">
+							<ul class="pagination">
+								<li><a href="#"><i class="left_arrow"></i></a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#" class="active">2</a></li>
+								<li><a href="#">3</a></li>
+								<li class="slash">...</li>
+								<li><a href="#">10</a></li>
+								<li><a href="#"><i class="right_arrow"></i></a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -362,16 +373,24 @@
 				</div>
 				<div class="popup_search_form">
 					<div>
-						<ul class="search_nav">
-							<li><a href="#">ВСЕ КАТЕГОРИИ</a></li>
-							<li><a href="#">ЖЕНСКАЯ КОЛЛЕКЦИЯ</a></li>
-							<li><a href="#">МУЖСКАЯ КОЛЛЕКЦИЯ</a></li>
-						</ul>
-						<div class="searc_2_form">
-							<button type="submit" class="search_btn"><i class="search_icon"></i></button>
-							<input type="text" placeholder="Поиск" />
-							<button type="button" class="reset_btn"></button>
-						</div>
+						<form>
+							<div class="radios_nav">
+								<div class="line_radio">
+									<label for="radio_1"><input checked type="radio" name="categories" id="radio_1"><span>ВСЕ КАТЕГОРИИ</span></label>
+								</div>
+								<div class="line_radio">
+									<label for="radio_2"><input type="radio" name="categories" id="radio_2"><span>ЖЕНСКЯА КОЛЛЕКЦИЯ</span></label>
+								</div>
+								<div class="line_radio">
+									<label for="radio_3"><input type="radio" name="categories" id="radio_3"><span>МУЖСКАЯ КОЛЛЕКЦИЯ</span></label>
+								</div>
+							</div>
+							<div class="searc_2_form">
+								<button type="submit" class="search_btn"><i class="search_icon"></i></button>
+								<input type="text" placeholder="Поиск" />
+								<button type="button" class="reset_btn"></button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>

@@ -105,6 +105,15 @@
 
 	/*-- Header --*/
 
+	/*-- Section 1 - Planet Page --*/
+
+	.image_wrapp .promo_title {
+	    height: 26em;
+	    width: 26em;
+	}
+
+	/*-- /Section 1 - Planet Page --*/
+
 	/*-- Section 1 - Orders Page --*/
 
 	.order_item {
@@ -146,12 +155,16 @@
 	/*-- Section 1 - Profile Page --*/
 
 	.profile_templ .side_bg {
-	    display: none;
+	    width: 300px;
+	}
+
+	.side_bg .img_box {
+	    min-height: 400px !important;
+	    margin: 20px 0;
 	}
 
 	.profile_wrapp {
-		width: 100%;
-	    max-width: 900px;
+    	width: calc(100% - 600px);
 	}
 
 	.profile_wrapp h2 {
@@ -219,6 +232,15 @@
 	}
 
 	/*-- .Section 1 - Vishlist Page --*/
+
+	/*-- Section 1 - Chekout Page --*/
+
+	.checkout_table h3 {
+	    font-size: 24px;
+	    line-height: 30px;
+	}
+
+	/*-- /Section 1 - Chekout Page --*/
 
 }
 
@@ -342,11 +364,6 @@
 		padding: 15px 25px;
 	}
 
-	.checkout_table h3 {
-	    font-size: 24px;
-	    line-height: 30px;
-	}
-
 	.checkout_table p {
 	    padding: 10px 0;
 	    font-size: 24px;
@@ -406,15 +423,6 @@
 	}
 
 	/*-- /Section 1 - Settings Page --*/
-
-	/*-- Section 1 - Planet Page --*/
-
-	.image_wrapp {
-		max-width: 500px;
-		margin: 0 auto;
-	}
-
-	/*-- /Section 1 - Planet Page --*/
 
 
 }
@@ -512,6 +520,14 @@
 
 /*-- /Section 1 - Orders Page --*/
 
+/*-- Popups --*/
+
+.line_radio label {
+    font-size: 26px;
+}
+
+/*-- /Popups --*/
+
 }
 
 @media only screen and (max-width: 1124px) {
@@ -568,6 +584,22 @@
 	}
 
 	/*-- /Section 1 - Vishlist Page --*/
+
+	/*-- Section 1 - Profile Page --*/
+
+	.side_bg {
+	    padding: 0 10px;
+	}
+
+	.profile_templ .side_bg {
+	    width: 200px;
+	}
+
+	.profile_wrapp {
+    	width: calc(100% - 400px);
+	}
+
+	/*-- /Section 1 - Profile Page --*/
 
 	/*-- Popups --*/
 
@@ -984,14 +1016,6 @@
 
 	/*-- /Section 1 - Card Page --*/
 
-	/*-- Section 1 - Orders Page --*/
-
-	.profile_sect {
-	    margin: 29px 0;
-	}
-
-	/*-- /Section 1 - Orders Page --*/
-
 	/*-- Section 1 - Search Page --*/
 
 	.good_thumbnails_2 .good_thumb_2 {
@@ -1007,12 +1031,12 @@
 	    width: 20em;
 	}
 
-	.image_wrapp {
-		max-width: 300px;
-	}
-
 	.windowH {
 	    min-height: auto;
+	}
+
+	.left_image img, .right_image img {
+	    max-height: 71vh;
 	}
 
 	/*-- /Section 1 - Planet Page --*/
@@ -1049,6 +1073,24 @@
 
 	/*-- /Section 1 - Sign Page --*/
 
+	/*-- Section 1 - Profile Page --*/
+
+	.profile_templ {
+		display: block;
+	    min-height: auto;
+	}
+
+	.profile_templ .side_bg {
+		display: none;
+	}
+
+	.profile_wrapp {
+	    width: 100%;
+	    padding: 20px 0;
+	}
+
+	/*-- /Section 1 - Profile Page --*/
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -1075,7 +1117,7 @@
 	}
 
 	.breadcrumbs {
-	    margin: 0 -20px;
+		margin: 20px -20px 0 -20px;
 	}
 
 	/*-- Header --*/
@@ -1450,18 +1492,19 @@
 
 	/*-- Section 1 - Planet Page --*/
 
-	.left_image .image_link {
+	.image_link.left_link {
 		background: rgba(255, 255, 255, .7);
 	    top: 86%;
-	    left: -102px;
+	    left: 0;
 	}
 
-	.right_image .image_link {
+	.image_link.right_link {
 		background: rgba(255, 255, 255, .7);
+		right: 0;
 	}
 
 	.image_wrapp {
-		max-width: 200px;
+		width: 100%;
 	}
 
 	/*-- /Section 1 - Planet Page --*/
@@ -1477,6 +1520,20 @@
 	}
 
 	/*-- /Section 1 - Vishlist Page --*/
+
+	.pagination {
+		margin: 0 -4px;
+	    padding: 20px 0
+	}
+
+	.pagination li {
+	    padding: 0 4px;
+	}
+
+	.pagination li a {
+	    min-width: 26px;
+	    font-size: 22px;
+	}
 
 	/*-- Popups --*/
 
@@ -1716,18 +1773,17 @@
 
 	/*-- Popups --*/
 
-	.search_nav {
+	.radios_nav {
 		display: block;
 		margin: 15px 0;
 	}
 
-	.search_nav li {
-		display: block;
-	    padding: 0;
+	.line_radio {
+	    padding: 10px;
 	}
 
-	.search_nav li a {
-	    font-size: 20px;
+	.line_radio label span {
+		font-size: 20px;
 	    line-height: 25px;
 	}
 

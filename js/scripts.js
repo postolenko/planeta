@@ -29,11 +29,13 @@ function getPromoImgParams() {
     }
     if(bodyWidth > 767) {
         $("#setHeight").css({
-            "padding-top" : $(".main_header").height() + "px"
+            "padding-top" : $(".main_header").height() + "px",
+            "height" : $(window).height() - $(".main_header").height() + "px"
         });
     } else {
         $("#setHeight").css({
-            "padding-top" : 0
+            "padding-top" : 0,
+            "height" : "auto"
         });
     }
 }
@@ -72,7 +74,7 @@ function getHeaderParams() {
         $(".main_header").removeClass("background");
     }
 
-    if($(".main_header").hasClass("fixed")) {
+    if($(".main_header").hasClass("fixed") || bodyWidth <= 768) {
         $(".wrapper").css({
             "padding-top" : $(".main_header").height() + "px"
         });
