@@ -389,6 +389,11 @@
 	    line-height: 30px;
 	}
 
+	.input_wrapp_white.tel_input span {
+	    top: 15px;
+	    font-size: 25px;
+	}
+
 	/*-- /Section 1 - Chekout Page --*/
 
 	/*-- Section 1 - Settings Page --*/
@@ -1319,6 +1324,11 @@
 	}
 
 	.input_wrapp_white input {
+	    font-size: 18px;
+	}
+
+	.input_wrapp_white.tel_input span {
+	    top: 15px;
 	    font-size: 18px;
 	}
 

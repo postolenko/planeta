@@ -403,4 +403,12 @@ $(document).ready(function() {
         }
     });
 
+    // ------------
+
+    $(".searc_2_form .reset_btn").on("click", function(e) {
+        e.preventDefault();
+        parentBlock = $(this).closest(".searc_2_form");
+        parentBlock.find(".search_text").val("");
+    });
+
 });

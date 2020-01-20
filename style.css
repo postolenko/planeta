@@ -1078,7 +1078,6 @@ header {
 }
 
 .planeta_img {
-    content: "";
     width: 102%;
     margin: 0 -1%;
     height: auto;
@@ -1090,6 +1089,10 @@ header {
     -webkit-transform: translate(0, -50%);
     -moz-transform: translate(0, -50%);
     transform: translate(0, -50%);
+}
+
+.content_inner_box .planeta_img {
+    top: 47%;
 }
 
 /*-- Section 1 - Maine Page --*/
@@ -1886,7 +1889,7 @@ header {
     margin: 0;
     padding: 2px 0;
     text-align: center;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 32px;
     font-weight: normal;
     color: #585858;
@@ -2500,6 +2503,7 @@ header {
 
 .planet_article {
     padding: 77px 0;
+    position: relative;
 }
 
 .planet_article p {
@@ -3670,6 +3674,10 @@ button.minus_btn_2 {
 
 /*-- Section 1 - Vishlist Page --*/
 
+.planeta_img_6_2 {
+    top: 93px;
+}
+
 .resp_title {
     display: none;
 } 
@@ -3843,6 +3851,24 @@ button.minus_btn_2 {
 
 .input_wrapp_white input::placeholder {
     color: #afafaf;
+}
+
+.tel_input {
+    position: relative;
+}
+
+.tel_input span {
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #5a5a5a;
+}
+
+.tel_input input {
+    padding-left: 80px;
 }
 
 .white_select {
@@ -4385,7 +4411,7 @@ body.fixed {
     flex: 1;
 }
 
-.popup_search_form > div {
+.popup_search_form > form {
     width: 100%;
 }
 
