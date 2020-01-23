@@ -523,6 +523,11 @@
 		display: block;
 	}
 
+	.enter_form_wrapp .grey_btn,
+	.enter_form_wrapp .dark_btn {
+		min-width: 100%;
+	}
+
 /*-- /Section 1 - Orders Page --*/
 
 /*-- Popups --*/
