@@ -328,13 +328,10 @@ $(document).ready(function() {
         if(subMenu.length > 0) {
             e.preventDefault();        
             if(subMenu.is(":hidden")) {
-                // subMenu.slideDown(300);
                 subMenu.addClass("active");
                 parentBlock.children(".resp_btn").addClass("active");
             } else {
-                // subMenu.slideUp(300);
                 subMenu.removeClass("active");
-                // $(this).removeClass("active");
                 parentBlock.children(".resp_btn").removeClass("active");
             }
         }
