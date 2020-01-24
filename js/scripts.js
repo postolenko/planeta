@@ -325,22 +325,44 @@ $(document).ready(function() {
     $(".main_nav li a").on("click", function(e) {
         parentBlock = $(this).closest("li");
         var subMenu = parentBlock.children(".sub_menu");
-        if(subMenu.length > 0) {
-            e.preventDefault();        
-            if(subMenu.is(":hidden")) {
-                subMenu.addClass("active");
-                parentBlock.children(".resp_btn").addClass("active");
-            } else {
-                subMenu.removeClass("active");
-                parentBlock.children(".resp_btn").removeClass("active");
-            }
+        $(this).toggleClass("active");
+        if($(this).hasClass("active")) {
+            parentBlock.children(".resp_btn").addClass("active");
+            subMenu.addClass("active");
+        } else {
+            parentBlock.children(".resp_btn").removeClass("active");
+            subMenu.removeClass("active");
         }
     });
 
     $(this).keydown(function(eventObject){
         if (eventObject.which == 27 ) {
-            $(".main_nav .sub_menu").removeClass("active");
-            $(".main_nav .resp_btn").removeClass("active");
+            $(".main_nav .sub_menu").each(function() {
+                if($(this).hasClass("active")) {
+                    parentBlock = $(this).closest("li");
+                    parentBlock.find("a").removeClass("active");
+                    $(this).removeClass("active");
+                    parentBlock.find(".resp_btn").removeClass("active");
+                }
+            });
+        }
+    });
+
+    $(document).mouseup(function (e){
+        if(bodyWidth > 1024) {
+            hide_element = $(".main_nav li");
+            if (!hide_element.is(e.target)
+                && hide_element.has(e.target).length === 0 ) {
+                var mainNav = hide_element.closest(".main_nav");
+                mainNav.find(".sub_menu").each(function() {
+                    if($(this).hasClass("active")) {
+                        parentBlock = $(this).closest("li");
+                        parentBlock.find("a").removeClass("active");
+                        $(this).removeClass("active");
+                        parentBlock.find(".resp_btn").removeClass("active");
+                    }
+                });
+            }
         }
     });
 
