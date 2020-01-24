@@ -337,6 +337,13 @@ $(document).ready(function() {
         }
     });
 
+    $(this).keydown(function(eventObject){
+        if (eventObject.which == 27 ) {
+            $(".main_nav .sub_menu").removeClass("active");
+            $(".main_nav .resp_btn").removeClass("active");
+        }
+    });
+
     // ---------------------
 
     $("[data-popup-link]").on("click", function(e) {
