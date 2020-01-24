@@ -322,16 +322,21 @@ $(document).ready(function() {
 
     // -------------------
 
-    $(".resp_btn").on("click", function(e) {
-        e.preventDefault();
+    $(".main_nav li a").on("click", function(e) {
         parentBlock = $(this).closest("li");
         var subMenu = parentBlock.children(".sub_menu");
-        if(subMenu.is(":hidden")) {
-            subMenu.slideDown(300);
-            $(this).addClass("active");
-        } else {
-            subMenu.slideUp(300);
-            $(this).removeClass("active");
+        if(subMenu.length > 0) {
+            e.preventDefault();        
+            if(subMenu.is(":hidden")) {
+                // subMenu.slideDown(300);
+                subMenu.addClass("active");
+                parentBlock.children(".resp_btn").addClass("active");
+            } else {
+                // subMenu.slideUp(300);
+                subMenu.removeClass("active");
+                // $(this).removeClass("active");
+                parentBlock.children(".resp_btn").removeClass("active");
+            }
         }
     });
 

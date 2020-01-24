@@ -929,11 +929,10 @@ header {
     min-height: 585px;
     min-width: 1110px;
     padding: 20px 0;
-    background-color: #ffffff;
-    position: absolute;
-    top: -100vh;
-    left: -100vh;
-    opacity: 0;
+    background-color: #ffffff;    
+/*    top: -100vh;
+    left: -100vh;*/
+/*    opacity: 0;
     -webkit-transition-property: opacity;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
@@ -952,7 +951,7 @@ header {
 
     transition-property: opacity;
     transition-duration: .3s;
-    transition-timing-function: ease;
+    transition-timing-function: ease;*/
 }
 
 .sub_menu:before {
@@ -969,12 +968,25 @@ header {
     padding: 20px 0;
 }
 
-.main_nav li:hover .sub_menu {
+.main_nav li .sub_menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 20px);
+    left: 0;
+    z-index: 2;
+}
+
+.main_nav li .sub_menu.active {
+    display: flex;
+    display: -webkit-flex;
+}
+
+/*.main_nav li:hover .sub_menu {
     top: calc(100% + 20px);
     left: 0;
     opacity: 1;
     z-index: 2;
-}
+}*/
 
 .sub_menu .inner_sub {
     padding: 0 17%;
@@ -4409,7 +4421,7 @@ body.fixed {
     flex: 1;
 }
 
-.popup_search_form > form {
+.popup_search_form > div {
     width: 100%;
 }
 
