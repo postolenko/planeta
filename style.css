@@ -4843,3 +4843,239 @@ body.fixed {
 }
 
 /*-- /Popups --*/
+
+
+
+
+
+
+
+
+.promo_title {
+    height: 25em;
+    width: 25em;
+    -webkit-transform: skew(-10deg, -15deg);
+    -moz-transform: skew(-10deg, -15deg);
+    transform: skew(-8deg, -13deg);
+}
+
+
+
+/*-- Section 1 - Orders Page --*/
+
+.order_item_2 {
+    display: flex;
+    display: -webkit-flex;
+    margin: 17px 0;
+    padding-left: 20px;
+}
+
+.order_item_2:nth-child(1) {
+    margin-top: 50px;
+}
+
+.order_item_2:last-child {
+    margin-bottom: 26px;
+}
+
+.order_item_2 .cell {
+    padding: 35px 10px 0 10px;
+    text-align: center;
+}
+
+.order_item_2 .cell:nth-child(1) {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    width: 54%;
+    text-align: left;
+    padding-top: 0;
+}
+
+.order_item_2 .cell:nth-child(1) .inner_row {
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    margin-bottom: 29px;
+}
+
+.order_item_2 .cell:nth-child(1) .inner_row .inner_cell:nth-child(1) {
+    width: 57.5%;
+}
+
+.order_item_2 .cell:nth-child(1) .inner_row .inner_cell:nth-child(2) {
+    width: 17.5%;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.order_item_2 .cell:nth-child(1) .inner_row .inner_cell:nth-child(3) {
+    width: 25%;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.order_item_2 .cell:nth-child(2) {
+    width: 12%;
+    padding-top: 5px;
+}
+
+.order_item_2 .cell:nth-child(3) {
+    width: 14%;
+    padding-top: 5px;
+}
+
+.order_item_2 .cell:nth-child(4) {
+    width: 20%;
+    padding-top: 5px;
+}
+
+/*-- /Section 1 - Orders Page --*/
+
+@media only screen and (max-width: 1699px) {
+
+    /*-- Section 1 - Orders Page --*/
+
+    .order_item_2 {
+        padding-left: 0;
+    }
+
+    /*-- /Section 1 - Orders Page --*/
+
+}
+
+@media only screen and (max-width: 1160px) {
+
+/*-- Section 1 - Orders Page --*/
+
+.order_item_2 {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 20px;
+}
+
+.order_item_2 .cell:nth-child(1) {
+    width: 100%;
+    padding-right: 0;
+}
+
+.order_item_2 .p_resp {
+    display: block;
+}
+
+.order_item_2 .cell:nth-child(1) .inner_row .inner_cell:nth-child(1) {
+    width: 49.5%;
+}
+
+.order_item_2 .cell:nth-child(1) .inner_row .inner_cell:nth-child(2) {
+    width: 30.5%;
+}
+
+.order_item_2 .cell:nth-child(1) .inner_row .inner_cell:nth-child(3) {
+    width: 20%;
+}
+
+.order_item_2 p {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.order_item_2 .cell:nth-child(2) {
+    width: 100px;
+    margin-left: 166px;
+}
+
+.order_item_2 .cell:nth-child(3) {
+    width: calc(100% - 516px);
+}
+
+.order_item_2 .cell:nth-child(4) {
+    width: 250px;
+}
+
+/*-- /Section 1 - Orders Page --*/
+
+}
+
+@media only screen and (max-width: 768px) {
+
+/*-- Section 1 - Orders Page --*/
+
+.order_item_2 .cell:nth-child(1) .inner_row .inner_cell:nth-child(1) {
+    width: 100%;
+}
+
+.order_item_2 .cell:nth-child(1) .inner_row {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.order_item_2 .cell:nth-child(1) .inner_row .inner_cell:nth-child(2) {
+    width: 50%;
+}
+
+.order_item_2 .cell:nth-child(1) .inner_row .inner_cell:nth-child(3) {
+    width: 50%;
+}
+
+.order_item_2 .cell:nth-child(2) {
+    width: 100px;
+    margin-left: 0;
+}
+
+.order_item_2 .cell:nth-child(3) {
+    width: calc(100% - 350px);
+}
+
+.order_item_2 .p_resp {
+    padding-bottom: 10px;
+}
+
+.order_item_2 .good_table_cell_1 .img_box {
+    height: 180px;
+    margin-bottom: 20px;
+}
+
+/*-- /Section 1 - Orders Page --*/
+
+}
+
+@media only screen and (max-width: 550px) {
+
+/*-- Section 1 - Orders Page --*/
+
+.order_item_2 .cell:nth-child(3) {
+    width: calc(100% - 100px);
+}
+
+.order_item_2 .cell:nth-child(4) {
+    width: 100%;
+    text-align: left;
+}
+
+/*-- /Section 1 - Orders Page --*/
+
+}
+
+@media only screen and (max-width: 480px) {
+
+/*-- Section 1 - Orders Page --*/
+
+    .order_item .cell:nth-child(6) {
+        width: 100%;
+    }
+
+    .order_item_2 .good_table_cell_1 .img_box {
+        margin-bottom: 10px;
+    }
+
+    .order_item_2 p {
+        font-size: 19px !important;
+        line-height: 22px !important;
+    }
+
+/*-- /Section 1 - Orders Page --*/
+
+}
